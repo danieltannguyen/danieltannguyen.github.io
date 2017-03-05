@@ -2,10 +2,247 @@
 <html>
 <head>
 	<title>My Portfolio</title>
+	<meta charset="UFT-8">
+	<meta name="viewport" content="width=device-width, inital-scale=1" >
+
+	<link rel="shortcut-icon" type="image/png" href="favoricon.png">
+	<!--main css--> 
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+	<!--animaited header css-->
+	<link rel="stylesheet" href="/animation/css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="/animation/css/style.css"> <!-- Resource style -->
+	<script src="/animation/js/modernizr.js"></script> <!-- Modernizr -->
+	<!--icons css-->
+	<link rel="stylesheet" href="font-awesome-4.7.02/css/font-awesome.min.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="bootstrap-3.3.7-dist2/css/bootstrap.min.css">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="bootstrap-3.3.7-dist2/css/bootstrap-theme.min.css">
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="bootstrap-3.3.7-dist2/css/bootstrap.min.js"></script>
+	<!--Angularjs library-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js" ></script>
 </head>
 <body>
+	<div id="fullscreen-header" class="home-header" >
+	<div>&nbsp;<div>
+	<div>&nbsp;<div>
+	<div>&nbsp;<div>
+		<div class="header-container">
+			<div class="content">
+				<a href="#" class="home-logo">
+					<img  class="img-circle" src="pictures/avatar.jpg" style="width:100px; height: 100px; ">
+				</a>
+				<!--letters Hi Im daniel-->
 
-<h1 style="text-align:center;">COMING SOON !</h1>
+				<section class="cd-intro">
+					<h1 class="cd-headline zoom" style="color:white;">
+						<span>Hi, I'm Daniel. I develop</span>
+						<br>
+						<span class="cd-words-wrapper" style="text-align:center;">
+							<b class="is-visible">web applications</b>
+							<b>user interfaces</b>
+							<b>landing pages</b>
+						</span>
+					</h1>
+				</section>
+				<div class="page-scroll">
+					<a href="#sub-footer" class="ghost-button-border-color">Contact Me</a>
+				</div>
+
+				<div class="page-scroll learn-more">
+					<a href="#me">
+					Learn more about what I do
+						<br>
+						<i class="fa fa-chevron-down"></i>
+					</a>
+
+				</div>
+
+			</div>	
+
+		</div>
+		<div>&nbsp;<div>
+		<div>&nbsp;<div>
+		<div>&nbsp;<div>
+		<div>&nbsp;<div>
+		<div>&nbsp;<div>
+		<div>&nbsp;<div>
+
+	</div>
+	<!--Experience Section-->
+	<section id="me">
+		<dir class="container">
+			<div class="row">
+				<h1>My Expertise</h1>
+				
+			</div>
+			<div class="row">
+				<!--ideas-->
+				<div class="col-lg-4 col-md-4 col-sm-8 col-xs-12">
+					<div class="expertise-block">
+						<i class="fa fa-lightbulb-o yellow" aria-hidden="true"></i>
+						<h4><a href="#col1Content" data-toggle="collapse">Ideas</a></h4>
+						<div id="col1Content" class="collapse in">
+							<p>I collaborate with professors and peers to nurture and transform ideas into well thought out design specs. After all, that’s where the majority of amazing user experiences start.<p>
+						</div>
+					</div>
+				</div>
+				<!--UI/UX-->
+				<div class="col-lg-4 col-md-4 col-sm-8 col-xs-12">
+					<div class="expertise-block">
+						<i class="fa fa-pencil-square-o yellow" aria-hidden="true"></i>
+						<h4><a href="#col2Content" data-toggle="collapse">UI/UX</a></h4>
+						<div id="col2Content" class="collapse in">
+							<p>I create and design interfaces focusing on content structure and simple interactions. I ensure that the UI communicates with UX designer's path. I explore different approaches to solving a user problem. </p>
+						</div>
+					</div>
+				</div>
+				<!--Implemenation-->
+				<div class="col-lg-4 col-md-4 col-sm-8 col-xs-12">
+					<div class="expertise-block">
+						<i class="fa fa-code yellow" aria-hidden="true"></i>
+						<h4><a href="#col3Content" data-toggle="collapse">Implementation</a></h4>
+						<div id="col3Content" class="collapse in">
+							<p>I use Sublime Text 3 to write HTML(5), CSS(3) and JavaScript. I love coding things from scratch and I can add features that I want later on. I love awsome and responsive websites, so I like to work with front-end frameworks such as Bootstrap and Angularjs.<p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</dir>
+	</section>
+	<section id="projects">
+		<div class="container">
+			<div class="row">
+				<div class="eight columns offset-by-two columns">
+					<p class="intro slate">Projects</p>
+					<p class="statement">When I am free, I am creating some cool stuff.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-md-4 col-sm-8 col-xs-12">
+					<div class="expertise-block pic" style="visibility: visible;">
+						<img href="#col1ContentProject" data-toggle="collapse" src="pictures/whiteboard.png">
+						<p id="col1ContentProject" class="collapse in">
+							Gigsearch is worldwide employment-related search engine for particularly musician job listings launched in May 2016. Gigsearch provides feedback system from previous works and signing a contact in real time.
+						</p>
+						<a href="www.gigsearch.herokuapp.com" target="_blank" class="btn btn-primary">Visit Website</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-8 col-xs-12">
+					<div class="expertise-block pic" style="visibility: visible;">
+						<img href="#col2ContentProject" data-toggle="collapse" src="pictures/whiteboard.png">
+						<p id="col2ContentProject" class="collapse in">
+							OnlineWhiteboard is an website app that lets users draw/show their ideas to the other in real time. This website also entertains the users with games or animations from Christmas holiday. For future feature, OnlineWhiteboard will provide a Facetime video that helps users easily communicate with each others.For more info:
+						</p>
+						<a href="www.onlinewhiteboard.heroku.com" target="_blank" class="btn btn-primary">Visit Website</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-8 col-xs-12">
+					<div class="expertise-block pic" style="visibility: visible;">
+						<img href="#col3ContentProject" data-toggle="collapse" src="pictures/Drones.jpg">
+						<p id="col3ContentProject" class="collapse in">
+							This project focuses on navigating a drone that cleans up graffiti for tall building where people can not reach to it. This is my senior project that I am working on with my Software Engineering team. We will deliver this project at the end of year 2017.
+						</p>
+						<a href="https://drive.google.com/drive/folders/0B48YzQE7H_aAclNxTlNUQkVTRlE?usp=sharing" target="_blank" class="btn btn-primary">Check it Out</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--Work Together?-->
+	<section class="cd-selection" id="sub-footer" class="cd-section modal-is -visible"> 
+		<div class="container">
+			<div class="row">
+				<div class="eight colums offset-by-two columns">
+					<p class="intro">Want to work together?</p>
+					<p>If you have cool ideas for new projects, I would like to hear and accept yours. Please take a few minutes to tell me about about it.</p>
+					<div class="cd-modal-action">
+						<a href="#0" data-type="modal-trigger" class="btn">Get Started</a>
+						<span class="cd-modal-bg"></span>
+						
+						<div class="cd-modal">
+							<div class="cd-modal-content">
+								<div class="container">
+									<div class="row">
+										<div class="col-12">
+											<a href="http://danielnguyen.heroku.com" class="logo">Daniel Nguyen | Web Developer</a>
+										</div>
+										::after
+									</div>
+									<div class="row">
+										<div class="eight columns offset-by-two columns">
+											<p class="intro white">Before we start, just a few quick questions.</p>
+											<p class="statement white" style="color:white;">
+												After you introduce yourself and your project, I'll get in touch with you to schedule a time to chat. I will reply to you in a day.
+											</p>
+										</div>
+										::after
+									</div>
+									<div class="form-container">
+										<form action="http://formspree.io/danieltn91@gmail.com" method="POST">
+											<div class="row">		
+												<div class="col-6">
+													<input id="name" type="text" name="name" placeholder="Name *" required class="u-full-width">
+												</div>
+												<div class="col-6">
+													<input id="email" type="text" name="Email" placeholder="Email address *" required class="u-full-width">
+												</div>
+												::after
+											</div>
+											<div class="row">		
+												<div class="col-6">
+													<input id="Phone" type="text" name="Phone" placeholder="Phone Number">
+												</div>
+												<div class="col-6">
+													<input id="Website" type="text" name="web" placeholder="Website">
+												</div>
+												::after
+											</div>
+											<div class="col-12">
+												<textarea id="Message" name="message" placeholder="Describe your project. What is its purpose? What is your expection? How can I help? Timeline and budget details are also appreciated"></textarea>
+												<input type="submit" value="project" class="button button-ghost-white">
+												<p class="required">Required *</p>
+											</div>
+											::after
+										</form>
+									</div>
+									::after
+								</div>
+							</div>
+							::after
+						</div>
+					</div>
+					<a href="#0" class="cd-modal-close">Close</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--Footer Contact-->
+	<footer>
+		<div class="contact" id="contact">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<a href="http://danielnguyen.herokuapp.com" class="logo"></a>
+						<p class="developed-by">Developed by me © 2017</p>
+						<div class="contact">
+							<a href="https:www.facebook.com/dannielnguyen"><i class="fa fa-facebook"></i></a>
+							<a href="https://www.linkedin.com/in/daniel-nguyen-523120a2" target="_blank"><i class="fa fa-linkedin"></i></a>
+							<a href="https://wwww.github.com/codeskiller"><i class="fa fa-github"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="/animation/js/jquery-2.1.1.js"></script>
+	<script src="/animation/js/main.js"></script> <!-- Resource jQuery -->
+
+
 
 </body>
 </html>
