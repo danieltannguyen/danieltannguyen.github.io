@@ -1,21 +1,4 @@
 
-
-.cd-modal::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
-    pointer-events: none;
-    background: transparent;
-}
-#fullscreen-header:before, #fullscreen-header:after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
 .home-header::before {
     content: "";
     display: block;
