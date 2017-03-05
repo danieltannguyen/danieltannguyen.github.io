@@ -128,6 +128,27 @@
 .learn-more {
     padding-top : 40px;
 }
+@media (min-width: 550px)
+.offset-by-two.column, .offset-by-two.columns {
+    margin-left: 17.3333333333%;
+}
+@media (min-width: 550px)
+.eight.columns {
+    width: 65.3333333333%;
+}
+@media (min-width: 550px)
+.column:first-child, .columns:first-child {
+    margin-left: 0;
+}
+@media (min-width: 550px)
+.column, .columns {
+    margin-left: 4%;
+}
+.column, .columns {
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+}
 
 #me .expertise-block {
     margin: 4.0rem 0 1.0rem;
