@@ -1,4 +1,5 @@
 
+
 .cd-modal::after {
     content: '';
     position: absolute;
@@ -129,7 +130,7 @@
 	font-size: 5.0em;
 }
 #sub-footer{
-	background-color: #FDCD38;
+	background-color: #38A8CA;
 	text-align: center;
 	margin: 0 auto;
 }
@@ -154,74 +155,14 @@ p.intro {
     font-weight: 700;
     text-align: center;
 }
-.cd-modal-action {
-    position: relative;
-}
+
 @media screen and (min-width: 550px)
 .cd-modal-action .btn {
     font-size: 1.4rem;
     line-height: 5.0rem;
 }
-.cd-modal-action .btn.to-circle {
-    width: 4em;
-    color: transparent;
-    -webkit-transition: color 0.2s 0s, background-color 0.3s ease-in-out, width 0.3s 0.2s;
-    transition: color 0.2s 0s, background-color 0.3s ease-in-out, width 0.3s 0.2s;
-}
-.cd-modal-action .cd-modal-bg.is-visible {
-    opacity: 1;
-    visibility: visible;
-}
-.cd-modal-action .cd-modal-bg {
-    position: absolute;
-    z-index: 1;
-    left: 50%;
-    top: 0;
-    width: 4em;
-    border-radius: 50%;
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    -webkit-transform: translateX(-2em);
-    transform: translateX(-2em);
-    -webkit-transition: visibility 0s 0.5s;
-    transition: visibility 0s 0.5s;
-}
-.cd-modal-action .cd-modal-bg {
-    display: inline-block;
-    height: 4em;
-    background-color: #2A3A3F;
-}
-.cd-modal-action .cd-modal-bg {
-    position: absolute;
-    z-index: 1;
-    left: 50%;
-    top: 0;
-    width: 4em;
-    border-radius: 50%;
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    -webkit-transform: translateX(-2em);
-    transform: translateX(-2em);
-    -webkit-transition: visibility 0s 0.5s;
-    transition: visibility 0s 0.5s;
-}
-.cd-modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-    -webkit-transition: visibility 0s 0.3s, opacity 0.3s 0s, z-index 0s 0.3s;
-    transition: visibility 0s 0.3s, opacity 0.3s 0s, z-index 0s 0.3s;
-}
-.cd-modal-action .btn {
+
+.btnstart{
     display: inline-block;
     height: auto;
     width: 15em;
@@ -234,41 +175,61 @@ p.intro {
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
-    background-color: #FDCD3B;
+    background-color: transparent;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-transition: color 0.2s 0.3s, background-color 0.3s ease-in-out, width 0.3s 0s;
     transition: color 0.2s 0.3s, background-color 0.3s ease-in-out, width 0.3s 0s;
 }
-.cd-modal .cd-modal-content {
+.cd-modal-action .btnstart:hover,
+.cd-modal-action .btnstart:active{
+    background-color: #2A3A3F;
+  	color: #38A8CA;
+  	transition: color 0.3s ease-in,
+        		background-color 0.3s ease-in,
+              	border-color 0.3s ease-in;
+}
+
+@media screen and (min-width: 550px)
+.btnstart {
+    font-size: 1.4rem;
+    line-height: 5.0rem;
+}
+form {
+    display: block;
+    margin-top: 0em;
+}
+.form-container {
+    margin: 0 auto;
+    padding: 44px 0 40px 0;
+    width: 95%;
+}
+.modal-sh, .modal-content {
     height: 100%;
     width: 100%;
     overflow-y: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-.cd-modal .cd-modal-content .form-container form input[type=submit] {
-    border: 2px solid #FDCD3B;
-    background: transparent;
-    color: #fff;
-}
-input[type="submit"], input[type="reset"], input[type="button"] {
-    height: auto;
-    padding: 1.2rem 3.2rem;
-    font-size: 1.3rem;
-    line-height: normal;
-    text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    -webkit-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-    letter-spacing: 0;
-    border-radius: 50px;
-    border: 2px solid #999;
-    color: #999;
-}
-.container {
-    max-width: 1140px;
+
+
+.modal-body:not(.two-col) { padding:0px }
+.glyphicon { margin-right:5px; }
+.glyphicon-new-window { margin-left:5px; }
+.modal-body .radio,.modal-body .checkbox {margin-top: 0px;margin-bottom: 0px;}
+.modal-body .list-group {margin-bottom: 0;}
+.margin-bottom-none { margin-bottom: 0; }
+.modal-body .radio label,.modal-body .checkbox label { display:block; }
+.modal-footer {margin-top: 0px;}
+@media screen and (max-width: 325px){
+    .btn-close {
+        margin-top: 5px;
+        width: 100%;
+    }
+    .btn-results {
+        margin-top: 5px;
+        width: 100%;
+    }
 }
 @media (min-width: 550px)
 .container {
@@ -301,6 +262,7 @@ body {
 header, main, menu, nav, section, summary {
 	display: block;
 }
+
 footer{
 	background-color: #2A3A3F;
 	color: #fff;
