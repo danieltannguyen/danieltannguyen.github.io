@@ -30,9 +30,7 @@
 <body>
 
 	<div id="fullscreen-header" class="home-header" >
-	<div>&nbsp;<div>
-	<div>&nbsp;<div>
-	<div>&nbsp;<div>
+
 		<div class="header-container">
 			<div class="content">
 				<a href="#" class="home-logo">
@@ -67,12 +65,6 @@
 			</div>	
 
 		</div>
-		<div>&nbsp;<div>
-		<div>&nbsp;<div>
-		<div>&nbsp;<div>
-		<div>&nbsp;<div>
-		<div>&nbsp;<div>
-		<div>&nbsp;<div>
 
 	</div>
 	<!--Experience Section-->
@@ -250,7 +242,15 @@
 		</div>
 	</footer>
 
+<script type="text/javascript">
+	function sizeFullHeight() {
+    document.getElementsByTagName("html")[0].style.minHeight = window.innerHeight+'px';
+    document.getElementsByTagName("body")[0].style.minHeight = window.innerHeight+'px';
+	}
 
+	sizeFullHeight();
+	window.onresize = sizeFullHeight;
+</script>
 
 </body>
 </html>
