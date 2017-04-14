@@ -1,5 +1,5 @@
 
-.home-header::before {
+.home-header:before {
     content: "";
     display: block;
     position: absolute;
@@ -11,6 +11,19 @@
     background-image: -webkit-linear-gradient(left, rgba(49,61,65,0.6), rgba(49,61,65,0.6));
     background-image: linear-gradient(90deg, rgba(49,61,65,0.6), rgba(49,61,65,0.6));
 }
+
+@media screen and (min-width: 550px)
+.home-header {
+    background-image: url(/pictures/logo.jpg);
+}
+.home-header {
+    background-image: url(/pictures/logo.jpg);
+}
+.home-header {
+    position: relative;
+
+}
+
 .cd-headline.type .cd-words-wrapper {
     vertical-align: top;
     overflow: hidden;
@@ -23,6 +36,7 @@
 
 #fullscreen-header {
     height: 100vh;
+    min-height:100vh;
     position: relative;
     text-align: center;
     width: 100%;
@@ -31,6 +45,13 @@
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+}
+#fullscreen-header:before, #fullscreen-header:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
 }
 .content {
     display: table-cell;
@@ -61,13 +82,6 @@
 
 }
 
-@media screen and (min-width: 550px)
-.home-header {
-    background-image: url(/pictures/logo.jpg);
-}
-.home-header {
-    background-image: url(/pictures/logo.jpg);
-}
 .ghost-button-border-color{
   display: inline-block;
   width: 200px;
@@ -263,7 +277,6 @@ form {
 @media (min-width: 400px)
 .container {
     width: 85%;
-    padding: 0;
 }
 .container {
     position: relative;
@@ -326,4 +339,10 @@ footer a, footer a:hover {
     content: "";
     display: table;
     clear: both;
+}
+html, body {
+    min-height: 100%;
+    margin: 0;
+    padding: 0px;
+    line-height: 1.6;
 }
