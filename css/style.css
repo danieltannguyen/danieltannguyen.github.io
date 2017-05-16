@@ -219,7 +219,16 @@
     float: left;
     box-sizing: border-box;
 }
+/* ---------------------------------------------- /*
+ * Skills
+/* ---------------------------------------------- */
 
+#canvas{
+    background-color: #000000;
+}
+/* ---------------------------------------------- /*
+ * My Expertise
+/* ---------------------------------------------- */
 #me .expertise-block {
     margin: 4.0rem 0 1.0rem;
 }
@@ -228,7 +237,7 @@
     line-height: 1.8;
     font-size: 1.4rem;
 }
-#me {
+#skills, #me {
 	background-color: #eee;
 	text-align: center;
 	margin: 0 auto;

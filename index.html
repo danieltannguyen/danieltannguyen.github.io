@@ -22,7 +22,7 @@
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="/animation/js/main.js"></script> <!-- Resource jQuery -->
-	<script src="bootstrap-3.3.7-dist2/js/bootstrap.min.js"></script>
+	<script src="/bootstrap-3.3.7-dist2/js/bootstrap.min.js"></script>
 	<!--Angularjs library-->
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js" ></script>
 
@@ -54,7 +54,7 @@
 				</div>
 
 				<div class="page-scroll learn-more">
-					<a href="#me">
+					<a href="#skills">
 					Learn more about what I do
 						<br>
 						<i class="fa fa-chevron-down"></i>
@@ -62,7 +62,7 @@
 
 				</div>
 				<div class="mouse-icon" style="transform: matrix(1, 0, 0, 1, 0, 0);">
-					<a href="#me" class="link-section">
+					<a href="#skills" class="link-section">
 						<div class="mouse">
 							<div class="wheel"></div>
 						</div>
@@ -74,6 +74,17 @@
 		</div>
 
 	</div>
+	<!--Skills Section-->
+	<section id="skills">
+		<div class="row">
+			<div class="eight columns offset-by-two columns">
+          		<h1 class="intro slate">My Skills</h1>
+        	</div>
+		</div>
+		<div class="row">
+			<canvas id="canvas" style="width: 100%; height: 90vh; min-height:90vh;"></canvas>
+		</div>
+	</section>
 	<!--Experience Section-->
 	<section id="me">
 		<dir class="container">
@@ -133,7 +144,7 @@
 						<p id="col1ContentProject" class="collapse in">
 							Gigsearch is worldwide employment-related search engine for particularly musician job listings launched in May 2016. Gigsearch provides feedback system from previous works and signing a contact in real time.
 						</p>
-						<a href="https://www.gigsearch.herokuapp.com" target="_blank" class="ghostbutton">Visit Website</a>
+						<a href="https://www.gigssearch.herokuapp.com" target="_blank" class="ghostbutton">Visit Website</a>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
@@ -248,7 +259,7 @@
 			</div>
 		</div>
 	</footer>
-
+<script src="/js/skills.js"></script>
 <script type="text/javascript">
 	function sizeFullHeight() {
     document.getElementsByTagName("html")[0].style.minHeight = window.innerHeight+'px';
