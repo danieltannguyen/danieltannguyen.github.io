@@ -1,4 +1,27 @@
 
+/**
+.container-fluid{
+  text-align: center;
+}
+.nav a {
+  display: inline-block;
+  text-align: center;
+  padding: 14px 16px;
+}
+.nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+*/
+
+div {
+  display: block;
+}
+.content a img {
+  margin-top: 100px; 
+  height: 100px; 
+  max-width: 100%;
+}
 .home-header:before {
     content: "";
     display: block;
@@ -8,35 +31,22 @@
     bottom: 0;
     left: 0;
     pointer-events: none;
+
+   /* set background-image in all browsers*/
     background-image: -webkit-linear-gradient(left, rgba(49,61,65,0.6), rgba(49,61,65,0.6));
+    background-image: -moz-linear-gradient(left, rgba(49,61,65,0.6), rgba(49,61,65,0.6));
+    background-image: -o-linear-gradient(left, rgba(49,61,65,0.6), rgba(49,61,65,0.6));
+    background-image: -ms-linear-gradient(left, rgba(49,61,65,0.6), rgba(49,61,65,0.6));
     background-image: linear-gradient(90deg, rgba(49,61,65,0.6), rgba(49,61,65,0.6));
 }
 
-@media screen and (min-width: 550px)
 .home-header {
     background-image: url(/pictures/logo.jpg);
-}
-.home-header {
-    background-image: url(/pictures/logo.jpg);
-}
-.home-header {
     position: relative;
-
-}
-
-.cd-headline.type .cd-words-wrapper {
-    vertical-align: top;
-    overflow: hidden;
-}
-.cd-words-wrapper {
-    display: inline-block;
-    position: relative;
-    text-align: left;
 }
 
 #fullscreen-header {
     height: 100vh;
-    min-height:100vh;
     position: relative;
     text-align: center;
     width: 100%;
@@ -60,10 +70,7 @@
     text-align: center;
     vertical-align: middle;
 }
-@media screen and (min-width: 550px)
-.header-container {
-    padding: 0 40px;
-}
+
 .header-container {
     display: table;
     margin: 0 auto;
@@ -79,7 +86,6 @@
 }
 .cd-intro span{
     color: #fff;
-
 }
 
 .ghost-button-border-color{
@@ -94,8 +100,7 @@
   transition: border-color 0.3s ease-out,
               color 0.3s ease-out;
 }
-.ghost-button-border-color:hover,
-.ghost-button-border-color:active {
+.ghost-button-border-color:hover, .ghost-button-border-color:active {
   color: #66d8ed;
   border-color: #66d8ed;
   transition: border-color 0.4s ease-in,
@@ -113,8 +118,7 @@
   transition: border-color 0.3s ease-out,
               color 0.3s ease-out;
 }
-.ghostbutton:hover,
-.ghostbutton:active {
+.ghostbutton:hover, .ghostbutton:active {
   color: #66d8ed;
   background: #2A3A3F;
   border-color: #66d8ed;
@@ -123,7 +127,10 @@
 }
 
 .learn-more {
-    padding-top : 40px;
+    padding-top: 40px;
+}
+.fa {
+  display: inline-block;
 }
 /* ---------------------------------------------- /*
  * Mouse animate icon
@@ -134,7 +141,7 @@
   margin: 0 auto;
   height: 40px;
   width: 24px;
-  display: block;
+  display: inline-block;
   z-index: 10;
   opacity: 0.7;
 }
@@ -197,23 +204,10 @@
   }
 }
 
+/* ---------------------------------------------- /*
+ * Expertise
+/* ---------------------------------------------- */
 
-@media (min-width: 550px)
-.offset-by-two.column, .offset-by-two.columns {
-    margin-left: 17.3333333333%;
-}
-@media (min-width: 550px)
-.eight.columns {
-    width: 65.3333333333%;
-}
-@media (min-width: 550px)
-.column:first-child, .columns:first-child {
-    margin-left: 0;
-}
-@media (min-width: 550px)
-.column, .columns {
-    margin-left: 4%;
-}
 .column, .columns {
     width: 100%;
     float: left;
@@ -222,10 +216,37 @@
 /* ---------------------------------------------- /*
  * Skills
 /* ---------------------------------------------- */
-
+#skills {
+  background-color: blue;
+  width: 100%;
+}
+.container-skills {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 0px;
+}
+.container-skills:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+#skills {
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    min-height: 350px;
+    background-color: #2A3A3F;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
 #canvas{
     background-color: #000000;
+    width: 100%;
 }
+
 /* ---------------------------------------------- /*
  * My Expertise
 /* ---------------------------------------------- */
@@ -238,6 +259,7 @@
     font-size: 1.4rem;
 }
 #skills, #me {
+  margin-top: 50px;
 	background-color: #eee;
 	text-align: center;
 	margin: 0 auto;
@@ -255,9 +277,14 @@
 	text-align: center;
 	margin: 0 auto;
 }
+
+/* ---------------------------------------------- /*
+ * My Projects
+/* ---------------------------------------------- */
 #projects{
 	background: #fff;
 	text-align: center;
+  margin: 0;
 }
 #projects img {
     margin: 4.0rem 0 1.5rem;
@@ -265,9 +292,15 @@
     width: 90%;
     height: auto;
 }
-@media screen and (min-width: 1000px)
+#projects .container {
+    max-width: 960px;
+}
+
 section {
-	padding: 0 0 100px;
+  padding: 0 0 50px;
+}
+.eight p {
+      font-size: 20px;
 }
 p.intro {
     font-size: 2.0rem;
@@ -277,11 +310,9 @@ p.intro {
     text-align: center;
 }
 
-@media screen and (min-width: 550px)
-.cd-modal-action .btn {
-    font-size: 1.4rem;
-    line-height: 5.0rem;
-}
+/* ---------------------------------------------- /*
+ * Contact
+/* ---------------------------------------------- */
 
 .btnstart{
     display: inline-block;
@@ -311,11 +342,7 @@ p.intro {
               	border-color 0.3s ease-in;
 }
 
-@media screen and (min-width: 550px)
-.btnstart {
-    font-size: 1.4rem;
-    line-height: 5.0rem;
-}
+
 form {
     display: block;
     margin-top: 0em;
@@ -352,27 +379,14 @@ form {
         width: 100%;
     }
 }
-@media (min-width: 550px)
-.container {
-    width: 80%;
-}
-@media (min-width: 400px)
-.container {
-    width: 85%;
-}
 .container {
     position: relative;
     width: 100%;
-    max-width: 960px;
+    max-width: 1440px;
     margin: 0 auto;
-    padding: 0 20px;
-    box-sizing: border-box;
+    padding: 0 0px;
 }
 
-@media screen and (min-width: 550px)
-body {
-    font-size: 1.4rem;
-}
 body {
     font-size: 1.4rem;
     font-family: 'Montserrat', sans-serif;
@@ -421,6 +435,11 @@ footer a, footer a:hover {
     content: "";
     display: table;
     clear: both;
+}
+html {
+  font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
 }
 html, body {
     min-height: 100%;

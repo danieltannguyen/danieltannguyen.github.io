@@ -1,0 +1,90 @@
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	.content a img{
+	  margin-top: 10px; 
+	  height: 50px; 
+	  max-width: 50%;
+	}
+	.home-header {
+      background-image: url(/pictures/logo.jpg);
+  	}
+  	.cd-intro h1{
+  		font-size: 16px;
+  	}
+  	.row h1 {
+  		font-size: 25px;
+  	}
+  	.eight p {
+  		font-size: 16px;
+  	}
+  	.container-skills {
+    position: relative;
+    width: 91%;
+	}
+	
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+
+}
+@media screen and (min-width: 550px) {}
+  	.btnstart {
+      font-size: 1.4rem;
+      line-height: 5.0rem;
+  	}
+}
+@media (min-width: 550px) {
+ 	.header-container {
+      	padding: 0 40px;
+  	}
+  	.cd-modal-action .btn {
+	    font-size: 1.4rem;
+	    line-height: 5.0rem;
+	}
+  	.offset-by-two.column, .offset-by-two.columns {
+      	margin-left: 17.3333333333%;
+  	}
+  	.eight.columns {
+      	width: 65.3333333333%;
+  	}
+  	.column, .columns {
+      	margin-left: 4%;
+  	}
+  	.column:first-child, .columns:first-child {
+      	margin-left: 0;
+  	}
+  	
+}
+
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+	.content a img{
+	  margin-top: 10px; 
+	  height: 50px; 
+	  max-width: 50%;
+	}
+	.home-header {
+      background-image: url(/pictures/logo.jpg);
+  	}
+  	.cd-intro h1{
+  		font-size: 16px;
+  	}
+  	h1 {
+  		font-size: 18px;
+  	}
+}
+ 
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+	section {
+		padding: 0 0 100px;
+	}
+	.content a img{
+	  margin-top: 100px; 
+	  height: 100px; 
+	  max-width: 10%;
+	}
+
+}

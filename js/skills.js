@@ -26,6 +26,7 @@ if (canvas && canvas.getContext) {
 
 function Initialize() {
     canvas.addEventListener('mousemove', MouseMove, false);
+    canvas.addEventListener('pointermove', MouseMove, false);
     window.addEventListener('resize', ResizeCanvas, false);
     setInterval( TimeUpdate, 20 ); // velocity : lower number = faster speed               
     context.beginPath();
@@ -97,7 +98,7 @@ function MouseMove(e) {
     context.font="20px Verdana";
 
     // Create gradient
-    var gradient=context.createLinearGradient(0,0,canvas.width,0);
+    var gradient=context.createLinearGradient(0,0,window.innerWidth,0);
     gradient.addColorStop("0","magenta");
     gradient.addColorStop("0.5","blue");
     gradient.addColorStop("1.0","red");

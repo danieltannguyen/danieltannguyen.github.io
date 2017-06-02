@@ -2,12 +2,17 @@
 <html>
 <head>
 	<title>Daniel Nguyen | Web Developer</title>
-	<meta charset="UFT-8">
-	<meta name="viewport" content="width=device-width, inital-scale=1" >
+	<meta charset="utf-8">
 
-	<link rel="shortcut-icon" type="image/png" href="favoricon.png">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+
+	
+	<link rel="shortcut-icon" type="image/png" href="/pictures/my avatar.png">
 	<!--main css--> 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<link rel="stylesheet" type="text/css" media="screen and (max-device-width: 480px)" href="css/mobile.css" />
+
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
 	<!--animaited header css-->
 	<link rel="stylesheet" href="/animation/css/reset.css"> <!-- CSS reset -->
@@ -27,17 +32,40 @@
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js" ></script>
 
 </head>
+<!--Scrollable area-->
 <body>
+	
+	<!--Navigation bar
 
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynarbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>			
+				</button>
+			</div>
+			<div class="navbar-collapse collapse" id="mynavbar">
+					<div class="nav navbar-bar">
+						<a href="#skills">Skills</a>
+						<a href="#me">My Expertise</a>
+						<a href="#projects">Projects</a>
+						<a href="#contact">Contact</a>
+					</div>
+			</div>
+			
+		</div>
+	</nav>
+
+	-->
 	<div id="fullscreen-header" class="home-header" >
-
 		<div class="header-container">
 			<div class="content">
 				<a href="#" class="home-logo">
-					<img  class="img-circle" src="pictures/avatar.jpg" style="width:100px; height: 100px; ">
+					<img  class="img-circle" src="pictures/avatar.jpg" ">
 				</a>
 				<!--letters Hi Im daniel-->
-
 				<section class="cd-intro">
 					<h1 class="cd-headline zoom" style="color:white;">
 						<span>Hi, I'm Daniel. I design</span>
@@ -52,14 +80,12 @@
 				<div class="page-scroll">
 					<a href="#sub-footer" class="ghost-button-border-color">Contact Me</a>
 				</div>
-
 				<div class="page-scroll learn-more">
 					<a href="#skills">
 					Learn more about what I do
 						<br>
 						<i class="fa fa-chevron-down"></i>
 					</a>
-
 				</div>
 				<div class="mouse-icon" style="transform: matrix(1, 0, 0, 1, 0, 0);">
 					<a href="#skills" class="link-section">
@@ -68,26 +94,25 @@
 						</div>
 					</a>
 				</div>
-
 			</div>	
-
 		</div>
-
 	</div>
 	<!--Skills Section-->
 	<section id="skills">
-		<div class="row">
-			<div class="eight columns offset-by-two columns">
-          		<h1 class="intro slate">My Skills</h1>
-        	</div>
-		</div>
-		<div class="row">
-			<canvas id="canvas" style="width: 100%; height: 90vh; min-height:90vh;"></canvas>
+		<div class="container-skills">
+			<div class="row">
+				<div class="eight columns offset-by-two columns">
+	          		<h1 class="intro slate">My Skills</h1>
+	        	</div>
+			</div>
+			<div class="row">
+				<canvas id="canvas" style="width: 100% !important; height: 90vh; min-height:90vh;"></canvas>
+			</div>
 		</div>
 	</section>
 	<!--Experience Section-->
 	<section id="me">
-		<dir class="container">
+		<div class="container">
 			<div class="row">
 				<div class="eight columns offset-by-two columns">
               		<h1 class="intro slate">My Expertise</h1>
@@ -123,18 +148,17 @@
 						<div id="col3Content" class="collapse in">
 							<p>I use Sublime Text 3 to write HTML(5), CSS(3) and JavaScript. I love coding things from scratch and I can add features that I want later on. I love awsome and responsive websites, so I like to work with front-end frameworks such as Bootstrap and Angularjs.<p>
 						</div>
-					</div>
-					
+					</div>				
 				</div>
 			</div>
-		</dir>
+		</div>
 	</section>
 	<section id="projects">
 		<div class="container">
 			<div class="row">
 				<div class="eight columns offset-by-two columns">
 					<h1 class="intro slate">Projects</h1>
-					<p class="statement" style="font-size:20px;">When I am free, I create some cool stuff.</p>
+					<p class="statement">When I am free, I create some cool stuff.</p>
 				</div>
 			</div>
 			<div class="row">
@@ -170,6 +194,7 @@
 		</div>
 	</section>
 	<!--Work Together?-->
+	<section id="contact"></section>
 	<section class="cd-selection" id="sub-footer" class="cd-section modal-is -visible"> 
 		<div class="container">
 			<div class="row">
@@ -240,8 +265,8 @@
 		</div>
 	</section>
 	<!--Footer Contact-->
-	<footer>
-		<div class="contact" id="contact">
+	<footer id="contact">
+		<section class="contact" id="contact">
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
@@ -257,7 +282,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	</footer>
 <script src="/js/skills.js"></script>
 <script type="text/javascript">
