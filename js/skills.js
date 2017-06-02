@@ -26,11 +26,11 @@ if (canvas && canvas.getContext) {
 
 function Initialize() {
     canvas.addEventListener('mousemove', MouseMove, false);
-    canvas.addEventListener('pointermove', MouseMove, false);
+    window.addEventListener("scroll", MouseScroll,false);
     window.addEventListener('resize', ResizeCanvas, false);
     setInterval( TimeUpdate, 20 ); // velocity : lower number = faster speed               
     context.beginPath();
-                
+
     ResizeCanvas();
 }
 
@@ -94,6 +94,9 @@ function TimeUpdate(e) {
 function MouseMove(e) {
     mouse.x = e.layerX;
     mouse.y = e.layerY;
+    addText();
+}
+function addText(){
 
     context.font="20px Verdana";
 
@@ -121,8 +124,10 @@ function MouseMove(e) {
     context.fillText("Photoshop",particles[12].x-50,particles[12].y);
     context.fillText("CSS3",particles[13].x-30,particles[13].y);
     context.fillText("AWS",particles[14].x-25,particles[14].y);
-    context.fillText("HTML",particles[15].x-30,particles[15].y);
+}
 
+function MouseScroll(e) {
+    addText();
 }
 
 function Draw( x, y ) {
