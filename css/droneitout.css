@@ -1,0 +1,20 @@
+/* set a max-width for horizontal fluid layout and make it centered */
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1600px; /* or 950px */
+}
+h1 {
+	color: red;
+	font-family: Varela Round,arial,sans-serif;
+	text-align: center;
+	color: red;
+	text-decoration-color: red;
+}
+.drone-block img {
+	width: 200pt;
+	height: 150pt;
+}
+.drone-block {
+	text-align: center;
+}

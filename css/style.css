@@ -13,7 +13,16 @@
   color: black;
 }
 */
-
+@media screen and (min-width: 768px){
+  .navbar-nav {
+    float: none;
+    text-align: center;
+  }
+  .navbar-nav li{
+    display: inline-block;
+    float: none;
+  }
+}
 div {
   display: block;
 }
@@ -405,15 +414,9 @@ footer{
 }
 footer .contact a {
     display: inline-block;
-    color: rgba(255,255,255,0.6);
     text-decoration: none;
+    text-align: center;
     margin: 0 4px;
-    height: 36px;
-    width: 36px;
-    font-size: 1.6rem;
-    line-height: 2.3;
-    background-color: rgba(0,0,0,0.1);
-    border-radius: 50px;
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
