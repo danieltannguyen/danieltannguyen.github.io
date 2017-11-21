@@ -1,3 +1,16 @@
+@media screen and (min-width: 768px){
+  .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+}
+#title {
+	margin-top: 100px;
+}
 /* set a max-width for horizontal fluid layout and make it centered */
 .container-fluid {
   margin-right: auto;
@@ -9,7 +22,6 @@ h1 {
 	font-family: Varela Round,arial,sans-serif;
 	text-align: center;
 	color: red;
-	text-decoration-color: red;
 }
 .drone-block img {
 	width: 200pt;
@@ -17,4 +29,54 @@ h1 {
 }
 .drone-block {
 	text-align: center;
+}
+.divider{
+  height:1px;
+  border-bottom: 2px solid red;
+}
+iframe {
+   display: block;
+   margin: 0 auto;
+}
+#video div h5{
+   text-align: center;
+   vertical-align: center;
+}
+#videos{
+	margin-bottom: 100px;
+}
+
+footer{
+	background-color: #2A3A3F;
+	color: #fff;
+	text-align: center;
+	padding: 80px 0 50px;
+}
+footer .contact a {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 4px;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+footer a, footer a:hover {
+    border-bottom: none;
+}
+
+
+.fa-linkedin:before {
+    content: "\f0e1";
+}
+.fa-facebook:before {
+    content: "\f0e1";
+}
+.fa-github:before {
+    content: "\f09b";
+}
+
+.container:after, .row:after, .u-cf {
+    content: "";
+    display: table;
+    clear: both;
 }
