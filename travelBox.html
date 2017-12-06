@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Travel Box</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />	
+	<link rel="shortcut-icon" type="image/png" href="/pictures/home/my avatar.png">
+	<!--main css--> 
+	<link rel="stylesheet" type="text/css" href="css/travelbox.css">
+	<link rel="stylesheet" type="text/css" media="screen and (max-device-width: 480px)" href="css/mobile.css" />
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+	<!--icons css-->
+	<link rel="stylesheet" href="font-awesome-4.7.02/css/font-awesome.min.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="bootstrap-3.3.7-dist2/css/bootstrap.min.css">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="bootstrap-3.3.7-dist2/css/bootstrap-theme.min.css">
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="/animation/js/main.js"></script> <!-- Resource jQuery -->
+	<script src="/bootstrap-3.3.7-dist2/js/bootstrap.min.js"></script>
+	<!--Angularjs library-->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js" ></script>
+</head>
+<body>
+	<div class="container">
+		<!--Navigation bar-->
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>			
+				</button>
+			</div>
+			<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav navbar-center">
+					<li class="nav-item" id="nav-home">
+						<a class="nav-link" >Home</a>
+					</li>
+					<li class="nav-item" id="nav-resume">
+						<a class="nav-link" >Resume</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#Expertise">My Expertise</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#projects">Projects</a>
+					</li>
+					<li class="nav-item" id="nav-about">
+						<a class="nav-link" href="#about">About</a>
+					</li>
+				</ul>	
+			</div>
+		</nav> <!--End navigation bar -->
+		<section id="title">
+			<div>
+				<h1>Mobile Developement Project</h1>
+				<h1 >Travel Box Project (August 2017 - Present)</h1>
+			</div>			
+		</section>
+		<section id="introduction">
+			<img src="pictures/travelBox/whatistravelbox.png">
+		</section>
+		<section id="architecture">
+			<h3>Architecture</h3>
+			<h4>Plaftforms and Interfaces (High level design)</h4>
+			<img src="/pictures/travelBox/travelBoxArchitecture.png">
+
+			<h3>Data Model (Component level design)</h3>
+			<img src="pictures/travelBox/travelBoxDataModel.png">
+		</section>
+		<section id="technologies">
+			<h3>Technologies Used</h3>
+			<img src="/pictures/travelBox/travelBoxTechnologies.png">
+		</section>
+	</div>
+	<!--Footer Contact-->
+	<footer id="contact">
+			<section class="contact" id="contact">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div>&nbsp;</div>
+							<div class="contact">
+								<a style="color: lightblue" href="https://www.linkedin.com/in/daniel-nguyen-523120a2" target="_blank"><i class="fa fa-linkedin fa-3x"></i></a>
+								<a style="color: violet" href="https://www.github.com/codeskiller"><i class="fa fa-github fa-3x"></i></a>
+								<a style="color: lightblue" href="https:www.facebook.com/dannielnguyen"><i class="fa fa-facebook fa-3x"></i></a>
+							</div>
+							<div>&nbsp;</div>
+							<a><img href="www.danielnguyen.xyz" class="img-circle" src="pictures/home/my avatar.png" style="width:50px; height:50px;"></a>
+							<div>&nbsp;</div>
+							<p class="developed-by">Developed by me © 2017</p>
+							<div class="divider"></div>
+							<div class="contact2">
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"> 
+										<h4>Email: Danieltn91@gmail.com</h4>
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"> 
+										<h4>Phone: (408)-667-1910</h4>
+									</div>
+								</div>		
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+	</footer> <!--end footer-->
+	<script type="text/javascript">
+			function sizeFullHeight() {
+				document.getElementsByTagName("html")[0].style.minHeight = window.innerHeight+'px';
+				document.getElementsByTagName("body")[0].style.minHeight = window.innerHeight+'px';
+			}
+
+			sizeFullHeight();
+			window.onresize = sizeFullHeight;
+	</script>
+
+</body>
+</html>

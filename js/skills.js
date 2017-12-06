@@ -2,7 +2,7 @@
 
 var particles = [];
 // create 15 particles
-for( var i = 0; i < 15; i++ ) {
+for( var i = 0; i < 16; i++ ) {
     particles.push( { 
         x:Math.random()*window.innerWidth, //Math.randome() returns a floating point in range [0,1).
         y:Math.random()*window.innerHeight, 
@@ -25,6 +25,7 @@ if (canvas && canvas.getContext) {
 }
 
 function Initialize() {
+
     canvas.addEventListener('mousemove', MouseMove, false);
     window.addEventListener("scroll", MouseScroll,false);
     window.addEventListener('resize', ResizeCanvas, false);
@@ -124,6 +125,12 @@ function addText(){
     context.fillText("Photoshop",particles[12].x-50,particles[12].y);
     context.fillText("CSS3",particles[13].x-30,particles[13].y);
     context.fillText("AWS",particles[14].x-25,particles[14].y);
+    context.fillText("Swift",particles[15].x-25,particles[15].y);
+
+    context.font = "50px Arial";
+    context.fillStyle = "white";
+    context.textAlign = "center";
+    context.fillText("My Skills",(canvas.width/2), (canvas.height/8));
 }
 
 function MouseScroll(e) {
