@@ -40,16 +40,16 @@ h4 {
   width:inherit;
 }
 #introduction{
-    max-width: 200px;
-    max-height: 300px;
-    float: left;
-    margin: 3px;
-    padding: 3px;
+  width: 350px; 
+  height: 350px; 
+  margin: 0 auto;
+}
+#introduction img{
+    width: 350px;
+    height: 350px;
+    margin: 0 auto;
 }
 
-#introduction img {
-  width:inherit;
-}
 
 .divider{
   height:1px;

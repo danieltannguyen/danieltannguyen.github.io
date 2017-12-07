@@ -127,6 +127,7 @@ function addText(){
     context.fillText("AWS",particles[14].x-25,particles[14].y);
     context.fillText("Swift",particles[15].x-25,particles[15].y);
 
+    //add text to canvas
     context.font = "50px Arial";
     context.fillStyle = "white";
     context.textAlign = "center";
