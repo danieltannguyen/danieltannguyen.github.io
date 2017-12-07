@@ -18,9 +18,9 @@ for( var i = 0; i < 16; i++ ) {
 var mouse = { x: 0, y: 0 };
 
 var canvas = document.getElementById('canvas');
-
+var context = canvas.getContext('2d');
 if (canvas && canvas.getContext) {
-    var context = canvas.getContext('2d');
+    //var context = canvas.getContext('2d');
     Initialize();
 }
 
