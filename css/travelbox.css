@@ -27,6 +27,13 @@ h4 {
   font-family: Varela Round,arial,sans-serif;
   text-align: center;
 }
+.pic-block img {
+  width: 350px;
+  height: 600px;
+}
+.pic-block {
+  text-align: center;
+}
 
 #architecture {
     width: inherit;
