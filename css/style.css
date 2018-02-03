@@ -57,7 +57,6 @@ div {
     position: absolute;
     bottom: 0;
     width: 100%;
-
 }
 .content {
     display: table-cell;
@@ -123,7 +122,7 @@ div {
 }
 
 .learn-more {
-    padding-top: 40px;
+    padding-top: 5px;
 }
 .fa {
   display: inline-block;
@@ -212,21 +211,7 @@ div {
 /* ---------------------------------------------- /*
  * Skills
 /* ---------------------------------------------- */
-#skills {
-  background-color: blue;
-  width: 100%;
-}
-.container-skills {
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 0px;
-}
-.container-skills:after {
-    content: "";
-    display: table;
-    clear: both;
-}
+
 #skills {
     height: 100vh;
     position: relative;
@@ -238,6 +223,12 @@ div {
     background-position: center center;
     background-repeat: no-repeat;
 }
+#skills:before, #skills:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
 #canvas{
     background-color: #000000;
     width: 100%;
@@ -247,15 +238,14 @@ div {
  * My Expertise
 /* ---------------------------------------------- */
 #me .expertise-block {
-    margin: 4.0rem 0 1.0rem;
+    margin: 1.0rem 0 1.0rem;
 }
 #me .expertise-block p {
     margin-bottom: 0;
-    line-height: 1.8;
     font-size: 1.4rem;
 }
 #skills, #me {
-  margin-top: 50px;
+  margin-top: 20px;
 	background-color: #eee;
 	text-align: center;
 	margin: 0 auto;
