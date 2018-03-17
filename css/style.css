@@ -123,6 +123,8 @@ div {
 
 .learn-more {
     padding-top: 5px;
+    transition-duration: 5s;
+    transition-delay: 2s;
 }
 .fa {
   display: inline-block;
@@ -139,6 +141,8 @@ div {
   display: inline-block;
   z-index: 10;
   opacity: 0.7;
+  transition-duration: 5s;
+  transition-delay: 2s;
 }
 .mouse-icon .wheel {
   -webkit-animation-name: drop;

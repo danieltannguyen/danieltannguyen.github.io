@@ -1,163 +1,165 @@
  <!DOCTYPE html>
-<html>
-<head>
-	<title>Daniel Nguyen Portfolio</title>
-	<meta charset="utf-8">
+ <html>
+ <head>
+ 	<title>Daniel Nguyen Portfolio</title>
+ 	<meta charset="utf-8">
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 
 	<!--this helps auto reloading web page when changing the code  in 3 seconds
-	<meta http-equiv="refresh" content="5" > -->
+		<meta http-equiv="refresh" content="5" > -->
 
-<link rel="shortcut-icon" type="image/png" href="/pictures/home/my avatar.png">
-<!--main css--> 
-<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="shortcut-icon" type="image/png" href="/pictures/home/my avatar.png">
+		<!--main css--> 
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 
-<link rel="stylesheet" type="text/css" media="screen and (max-device-width: 480px)" href="css/mobile.css" />
+		<link rel="stylesheet" type="text/css" media="screen and (max-device-width: 480px)" href="css/mobile.css" />
 
-<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
-<!--animaited header css-->
-<link rel="stylesheet" href="/animation/css/reset.css"> <!-- CSS reset -->
-<link rel="stylesheet" href="/animation/css/style.css"> <!-- Resource style -->
-<script src="/animation/js/modernizr.js"></script> <!-- Modernizr -->
-<!--icons css-->
-<link rel="stylesheet" href="font-awesome-4.7.02/css/font-awesome.min.css">
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="bootstrap-3.3.7-dist2/css/bootstrap.min.css">
-<!-- Optional theme -->
-<link rel="stylesheet" href="bootstrap-3.3.7-dist2/css/bootstrap-theme.min.css">
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="/animation/js/main.js"></script> <!-- Resource jQuery -->
-<script src="/bootstrap-3.3.7-dist2/js/bootstrap.min.js"></script>
-<!--Angularjs library-->
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js" ></script>
-</head>
-<!--Scrollable area-->
-<body>
-	
-	<!--Navigation bar-->
-	<nav class="navbar navbar-inverse navbar-fixed-top">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>			
-			</button>
-		</div>
-		<div class="collapse navbar-collapse">
-			<ul class="nav navbar-nav navbar-center">
-				<li class="nav-item">
-					<a class="nav-link" href="#">Home</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#skills">Skills</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#me">My Expertise</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#projects">Projects</a>
-				</li>
-				<li class="nav-item">
-						<a class="nav-link" href="resume.html">Resume</a>
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+		<!--animaited header css-->
+		<link rel="stylesheet" href="/animation/css/reset.css"> <!-- CSS reset -->
+		<link rel="stylesheet" href="/animation/css/style.css"> <!-- Resource style -->
+		<script src="/animation/js/modernizr.js"></script> <!-- Modernizr -->
+		<!--icons css-->
+		<link rel="stylesheet" href="font-awesome-4.7.02/css/font-awesome.min.css">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="bootstrap-3.3.7-dist2/css/bootstrap.min.css">
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="bootstrap-3.3.7-dist2/css/bootstrap-theme.min.css">
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="/animation/js/main.js"></script> <!-- Resource jQuery -->
+		<script src="/bootstrap-3.3.7-dist2/js/bootstrap.min.js"></script>
+		<!--Angularjs library-->
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js" ></script>
+	</head>
+	<!--Scrollable area-->
+	<body>
+
+		<!--Navigation bar-->
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>			
+				</button>
+			</div>
+			<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav navbar-center">
+					<li class="nav-item">
+						<a id="nav-home">Home</a>
 					</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#contact">Contact</a>
-				</li>
-			</ul>	
-		</div>
-	</nav> <!--End navigation bar -->
+					<li class="nav-item">
+						<a id="nav-skills">Skills</a>
+					</li>
+					<li class="nav-item">
+						<a id="nav-expertise">My Expertise</a>
+					</li>
+					<li class="nav-item">
+						<a id="nav-projects">Projects</a>
+					</li>
+					<li class="nav-item">
+						<a id="nav-resume" href="resume.html">Resume</a>
+					</li>
+					<li class="nav-item">
+						<a id="nav-contact">Contact</a>
+					</li>
+				</ul>	
+			</div>
+		</nav> <!--End navigation bar -->
 
-	<div id="fullscreen-header" class="home-header" >
-		<div class="header-container">
-			<div class="content">
-				<a href="#" class="home-logo">
-					<img class="img-circle" src="pictures/home/face.png" ">
-				</a>
-				<!--letters Hi Im daniel-->
-				<section class="cd-intro">
-					<h1 class="cd-headline zoom" style="color:white;">
-						<span>Hi, I'm Daniel. Welcome to</span>
-						<br>
-						<span class="cd-words-wrapper" style="text-align:center;">
-							<b class="is-visible">My Portfolio</b>
-							<b>My Site</b>
-							<b>My Collections</b>
-						</span>
-					</h1>
-				</section>
-				<section class="learn-more">
-					<div class="page-scroll learn-more">
-					<a href="#skills">
-						Learn more about what I do
-						<br>
-						<i class="fa fa-chevron-down"></i>
+		<div id="fullscreen-header" class="home-header" >
+			<div class="header-container">
+				<div class="content">
+					<a href="#" class="home-logo">
+						<img class="img-circle" src="pictures/home/face.png" ">
 					</a>
-					</div>
-					<div class="mouse-icon" style="transform: matrix(1, 0, 0, 1, 0, 0);">
-						<a href="#skills" class="link-section">
-							<div class="mouse">
-								<div class="wheel"></div>
-							</div>
-						</a>
-					</div>
-				</section>
-				
-			</div>	
-		</div>
-	</div>
-	<!--Skills Section-->
-	<div id="skills">
-		<div class="container-skills">
-			<div class="row">
-				<canvas id="canvas" style="height: 100vh;">
-				</canvas>
+					<!--letters Hi Im daniel-->
+					<section class="cd-intro">
+						<h1 class="cd-headline zoom" style="color:white;">
+							<span>Hi, I'm Daniel. Welcome to</span>
+							<br>
+							<span class="cd-words-wrapper" style="text-align:center;">
+								<b class="is-visible">My Portfolio</b>
+								<b>My Site</b>
+								<b>My Collections</b>
+							</span>
+						</h1>
+					</section>
+					<section class="learn-more">
+						<div class="page-scroll learn-more">
+							<a href="#skills">
+								Learn more about what I do
+								<br>
+								<i class="fa fa-chevron-down"></i>
+							</a>
+						</div>
+						<div class="mouse-icon" style="transform: matrix(1, 0, 0, 1, 0, 0);">
+							<a href="#skills" class="link-section">
+								<div class="mouse">
+									<div class="wheel"></div>
+								</div>
+							</a>
+						</div>
+					</section>
+
+				</div>	
 			</div>
 		</div>
-	</div>
-	<!--Experience Section-->
-	<section id="me">
-		<div class="container">
-			<div class="row">
-				<div class="eight columns offset-by-two columns">
-					<h1 class="intro slate">My Expertise</h1>
+		<!--Skills Section-->
+		<div id="skills">
+			<div class="container-skills">
+				<div class="row">
+					<canvas id="canvas" style="height: 100vh;">
+					</canvas>
 				</div>
 			</div>
-			<div class="row">
-				<!--ideas-->
-				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-					<div class="expertise-block">
-						<i class="fa fa-lightbulb-o yellow" aria-hidden="true"></i>
-						<h4><a href="#col1Content" data-toggle="collapse">Ideas</a></h4>
-						<div id="col1Content" class="collapse in">
-							<p>I collaborate with professors and peers to nurture and transform ideas into well thought out design specs. After all, that’s where the majority of amazing user experiences start.<p>
-							</div>
-						</div>
+		</div>
+		<!--Experience Section-->
+		<section id="me">
+			<div class="container">
+				<div class="row">
+					<div class="eight columns offset-by-two columns">
+						<h1 class="intro slate">My Expertise</h1>
 					</div>
-					<!--UI/UX-->
+				</div>
+				<div class="row">
+					<!--ideas-->
 					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 						<div class="expertise-block">
-							<i class="fa fa-pencil-square-o yellow" aria-hidden="true"></i>
-							<h4><a href="#col2Content" data-toggle="collapse">UI/UX</a></h4>
-							<div id="col2Content" class="collapse in">
-								<p>I create and design interfaces focusing on content structure and simple interactions. I ensure that the UI communicates with UX designer's path.I can handled complicated process flow and desgin simple UX for the web or mobile app. I explore different approaches to solving a user problem. </p>
-							</div>
-						</div>
-					</div>
-					<!--Implemenation-->
-					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-						<div class="expertise-block">
-							<i class="fa fa-code yellow" aria-hidden="true"></i>
-							<h4><a href="#col3Content" data-toggle="collapse">Implementation</a></h4>
-							<div id="col3Content" class="collapse in">
-								<p>I love coding things from scratch and I can add features that I want later on. I love awsome and responsive application, so I like to work with JavaScript and HTML5. I also love to work with front-end framewoks like Bootstrap and AngularJS. My goal is to code a fully functioning app that's scalable and integrated to all the back-end software, the database, and other related infrastructure it needs to run. Thus, I make decisions about how my app's functions come to life with code<p>
+							<i class="fa fa-lightbulb-o yellow" aria-hidden="true"></i>
+							<h4><a href="#col1Content" data-toggle="collapse">Ideas</a></h4>
+							<div id="col1Content" class="collapse in">
+								<p>I collaborate with professors and peers to nurture and transform ideas into well thought out design specs. After all, that’s where the majority of amazing user experiences start.<p>
 								</div>
-							</div>				
+							</div>
+						</div>
+						<!--UI/UX-->
+						<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+							<div class="expertise-block">
+								<i class="fa fa-pencil-square-o yellow" aria-hidden="true"></i>
+								<h4><a href="#col2Content" data-toggle="collapse">UI/UX</a></h4>
+								<div id="col2Content" class="collapse in">
+									<p>I create and design interfaces focusing on content structure and simple interactions. I ensure that the UI communicates with UX designer's path.I can handled complicated process flow and desgin simple UX for the web or mobile app. I explore different approaches to solving a user problem. </p>
+								</div>
+							</div>
+						</div>
+						<!--Implemenation-->
+						<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+							<div class="expertise-block">
+								<i class="fa fa-code yellow" aria-hidden="true"></i>
+								<h4><a href="#col3Content" data-toggle="collapse">Implementation</a></h4>
+								<div id="col3Content" class="collapse in">
+									<p>I love coding things from scratch and I can add features that I want later on. I love awsome and responsive application, so I like to work with JavaScript and HTML5. I also love to work with front-end framewoks like Bootstrap and AngularJS. My goal is to code a fully functioning app that's scalable and integrated to all the back-end software, the database, and other related infrastructure it needs to run. Thus, I make decisions about how my app's functions come to life with code.</p>
+								</div>
+							</div>	
 						</div>
 					</div>
+
 				</div>
 			</section>
+			<!--project-->
 			<section id="projects">
 				<div class="container">
 					<div class="row">
@@ -248,6 +250,32 @@
 					document.getElementsByTagName("html")[0].style.minHeight = window.innerHeight+'px';
 					document.getElementsByTagName("body")[0].style.minHeight = window.innerHeight+'px';
 				}
+				//make transition smoothly
+				$("#nav-home").click(function() {
+					$('html, body').animate({
+						scrollTop: $(".navbar-header").offset().top
+					}, 1500);
+				});
+				$("#nav-skills").click(function() {
+					$('html, body').animate({
+						scrollTop: $("#skills").offset().top
+					}, 1500);
+				});
+				$("#nav-expertise").click(function() {
+					$('html, body').animate({
+						scrollTop: $("#me").offset().top
+					}, 1500);
+				});
+				$("#nav-projects").click(function() {
+					$('html, body').animate({
+						scrollTop: $("#projects").offset().top
+					}, 1500);
+				});
+				$("#nav-contact").click(function() {
+					$('html, body').animate({
+						scrollTop: $("#contact").offset().top
+					}, 1500);
+				});
 
 				sizeFullHeight();
 				window.onresize = sizeFullHeight;
