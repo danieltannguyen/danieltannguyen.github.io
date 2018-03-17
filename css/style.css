@@ -242,21 +242,6 @@ div {
 /* ---------------------------------------------- /*
  * My Expertise
 /* ---------------------------------------------- */
-.parallax {
-    /* The image used */
-    background-image: url("/pictures/home/agile.jpg");
-
-    /* Set a specific height */
-    min-height: 300px; 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    background-color: #2A3A3F;
-}
 #me .expertise-block {
     margin: 1.0rem 0 1.0rem;
 }
@@ -445,6 +430,9 @@ html {
   font-family: sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
+}
+body, html {
+    height: 100%;
 }
 html, body {
     min-height: 100%;
