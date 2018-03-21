@@ -47,7 +47,7 @@
 		<div class="wrap container" role="document">
 			<div class="row">
 				<div class="col-md-6">
-					<form class="contact-form" method="POST" enctype="text/plain" action="http://formspree.io/danieltn91@gmail.com">
+					<form class="contact-form" method="POST" action="http://formspree.io/danieltn91@gmail.com">
 						<div class="title"><h2>Send a Message</h2></div>
 						<div class="row"> 
 							<div class="col-xs-6">
@@ -65,7 +65,7 @@
 						</div>
 						<p>Email Address
 							<span class="red">*</span><br>
-							<span><input type="text" name="_replyto"></span>
+							<span><input type="email" name="_replyto"></span>
 						</p>	
 						<p>Organization
 							<span class="red">*</span><br>
@@ -73,7 +73,7 @@
 						</p>	
 						<p>Message
 							<span class="red">*</span><br>
-							<span><textarea class="message" type="text" name="name" cols="40" rows="10"></textarea></span>
+							<span><textarea class="message" name="message" cols="40" rows="10"></textarea></span>
 						</p>
 
 							<input type="hidden" name="_next" value="thankyou.html"/>
@@ -120,15 +120,5 @@
 			</div>
 		</section>
 	</footer>
-	<script type="text/javascript">
-		var form = document.getElementById("contact-form");
-
-		document.getElementById("submit_id").addEventListener("click", function () {
-		  form.submit();
-		});
-		document.getElementById("reset_id").addEventListener("click", function () {
-		  form.clear();
-		});
-	</script>
 </body>
 </html>
