@@ -47,38 +47,41 @@
 		<div class="wrap container" role="document">
 			<div class="row">
 				<div class="col-md-6">
-					<form class="contact-form" method="GET" enctype="text/plain" action="send.php">
+					<form class="contact-form" method="POST" enctype="text/plain" action="http://formspree.io/danieltn91@gmail.com">
 						<div class="title"><h2>Send a Message</h2></div>
 						<div class="row"> 
 							<div class="col-xs-6">
 								<span>First Name
 									<span class="red">*</span>
-									<span><input type="text" name="firstname"></span>
+									<span><input type="text" name="name"></span>
 								</span>			
 							</div>
 							<div class="col-xs-6">
 								<span>Last Name
 									<span class="red">*</span>
-									<span><input type="text" name="lastname"></span>
+									<span><input type="text" name="name"></span>
 								</span>
 							</div>	
 						</div>
 						<p>Email Address
 							<span class="red">*</span><br>
-							<span><input type="text" name="email"></span>
+							<span><input type="text" name="_replyto"></span>
 						</p>	
 						<p>Organization
 							<span class="red">*</span><br>
-							<span><input type="text" name="organization"></span>
+							<span><input type="text" name="name"></span>
 						</p>	
 						<p>Message
 							<span class="red">*</span><br>
-							<span><textarea class="message" cols="40" rows="10"></textarea></span>
+							<span><textarea class="message" type="text" name="name" cols="40" rows="10"></textarea></span>
 						</p>
-						<!--reCATCHA V2-->
-						<div class="g-recaptcha" data-sitekey="6Lc05k0UAAAAAA5pv2VKolj0L1IAUHSxRWCq6q_2"></div>
-						<input type="submit" class="submit" value="Send">
-						<input type="reset" class="reset" value="Reset">
+
+							<input type="hidden" name="_next" value="thankyou.html"/>
+							<input type="hidden" name="_subject" value="New submission from danielnguyen.xyz"/>
+							<input type="text" name="_gotcha" style="display:none"/>
+							<input type="hidden" name="_format" value="plain" />
+						<input type="submit" class="submit" id="sumbit_id" value="Send">
+						<input type="reset" class="reset" id="reset_id" value="Reset">
 					</form>
 				</div>
 			</div>
@@ -117,5 +120,15 @@
 			</div>
 		</section>
 	</footer>
+	<script type="text/javascript">
+		var form = document.getElementById("contact-form");
+
+		document.getElementById("submit_id").addEventListener("click", function () {
+		  form.submit();
+		});
+		document.getElementById("reset_id").addEventListener("click", function () {
+		  form.clear();
+		});
+	</script>
 </body>
 </html>
