@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Me< | Daniel Nguyen</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="bootstrap-3.3.7-dist2/css/bootstrap.min.css">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="bootstrap-3.3.7-dist2/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/contact.css">
+	<!--icons css-->
+	<link rel="stylesheet" href="font-awesome-4.7.02/css/font-awesome.min.css">
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+	<div class="container">
+		<!--Navigation bar-->
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>			
+				</button>
+			</div>
+			<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav navbar-center">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="index.html#me">My Expertise</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="index.html#projects">Projects</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="resume.html">Resume</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contact">Contact</a>
+					</li>
+				</ul>	
+			</div>
+		</nav> 
+		<!--End navigation bar -->
+		<div class="wrap container" role="document">
+			<div class="row">
+				<div class="col-md-6">
+					<form class="contact-form" action="mailto:someone@example.com" method="post" enctype="text/plain" action="send.php">
+						<div class="title"><h2>Send a Message</h2></div>
+						<div class="row"> 
+							<div class="col-xs-6">
+								<span>First Name
+									<span class="red">*</span>
+									<span><input type="text" name="firstname"></span>
+								</span>			
+							</div>
+							<div class="col-xs-6">
+								<span>Last Name
+									<span class="red">*</span>
+									<span><input type="text" name="lastname"></span>
+								</span>
+							</div>	
+						</div>
+						<p>Email Address
+							<span class="red">*</span><br>
+							<span><input type="text" name="email"></span>
+						</p>	
+						<p>Organization
+							<span class="red">*</span><br>
+							<span><input type="text" name="organization"></span>
+						</p>	
+						<p>Message
+							<span class="red">*</span><br>
+							<span><textarea class="message" cols="40" rows="10"></textarea></span>
+						</p>
+						<!--reCATCHA V2-->
+						<div class="g-recaptcha" data-sitekey="6Lc05k0UAAAAAA5pv2VKolj0L1IAUHSxRWCq6q_2"></div>
+						<input type="submit" class="submit" value="Send">
+						<input type="reset" class="reset" value="Reset">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--Footer Contact-->
+	<footer id="contact">
+		<section class="contact" id="contact">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div>&nbsp;</div>
+						<div class="contact">
+							<a style="color: lightblue" href="https://www.linkedin.com/in/daniel-nguyen-523120a2" target="_blank"><i class="fa fa-linkedin fa-3x"></i></a>
+							<a style="color: violet" href="https://www.github.com/codeskiller"><i class="fa fa-github fa-3x"></i></a>
+							<a style="color: lightblue" href="https:www.facebook.com/dannielnguyen"><i class="fa fa-facebook fa-3x"></i></a>
+						</div>
+						<div>&nbsp;</div>
+						<a><img href="http://danielnguyen.herokuapp.com" class="img-circle" src="pictures/home/my avatar.png" style="width:50px; height:50px;"></a>
+						<div>&nbsp;</div>
+						<p class="developed-by">Developed by Daniel Nguyen © 2017</p>
+						<div class="divider"></div>
+						<div class="contact2">
+							<div class="row">
+								<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"> 
+									<h4>Email: Danieltn91@gmail.com</h4>
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"> 
+									<h4>Phone: (408)-667-1910</h4>
+								</div>
+							</div>		
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+	</footer>
+</body>
+</html>
