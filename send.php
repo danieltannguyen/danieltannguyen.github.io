@@ -1,14 +1,28 @@
 <?php
-$to = $_POST['danieltn91@gmail.com'] ;    
-$message = $_POST['message'] ;
-$from = $_POST['email'];
-$company = $_POST['organization'];
-$firstName = $_POST['firstname'];
-$lastName = $_POST['lastname'];
-$headers =  "From: ".$_POST['from']."\r\n" .
-"Company: ".$_POST['company']."\r\n" .
-"First Name: ".$_POST['firstName']."\r\n" .
-"Last Name: ".$_POST['lastName'];
-mail( $to, "Mail", $message, $headers );
-header( "Location: http://localhost/php/simple-mail.php" );
+	if(!isset($_POST['submit'])){
+		echo "error: you need to submit a form!";
+	}
+
+	$to = "danieltn91@gmail.com";    
+	$message = $_POST['message'] ;
+	$visitor_email = $_POST['email'];
+	$company = $_POST['organization'];
+	$firstName = $_POST['firstname'];
+	$lastName = $_POST['lastname'];
+	$email_subject = "New form submision";
+	
+	$email_body = "You recieved a message from a user $firstName $lastName. \n",
+					"Email address: $visitor_email\n",
+					"Here is the message:\n $message",
+	
+	$headers = "From: $to \r\n";
+
+	//validate 
+	if(empty($firstName)|| empty($lastName) || empty($visitor_email)){
+		echo "Must have name and email!";
+		exit;
+	}
+	//send email
+	mail($to, $email_subject, $email_body,$headers);
+
 ?>
