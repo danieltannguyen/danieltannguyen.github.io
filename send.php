@@ -24,7 +24,7 @@
 		exit;
 	}
 	//send email
-	mail($to, $email_subject, $email_body);
-	header( "Location: $thankyou_page" );
+	@mail($to, $email_subject, $email_body);
+	@header( "Location: $thankyou_page" );
 
 ?>
