@@ -1,16 +1,16 @@
 <?php
-	if(!isset($_POST['submit'])){
+	if(!isset($_GET['submit'])){
 		echo "error: you need to submit a form!";
 	}
 
 	$to = "danieltn91@gmail.com";    
-	$message = $_POST['message'] ;
-	$visitor_email = $_POST['email'];
-	$company = $_POST['organization'];
-	$firstName = $_POST['firstname'];
-	$lastName = $_POST['lastname'];
+	$message = $_GET['message'] ;
+	$visitor_email = $_GET['email'];
+	$company = $_GET['organization'];
+	$firstName = $_GET['firstname'];
+	$lastName = $_GET['lastname'];
 	$email_subject = "New form submision";
-	
+
 	$email_body = "You recieved a message from a user $firstName $lastName. \n",
 					"Email address: $visitor_email\n",
 					"Here is the message:\n $message",
