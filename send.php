@@ -1,14 +1,14 @@
 <?php
-	if(!isset($_REQUEST['submit'])){
+	if(!isset($_POST['submit'])){
 		echo "error: you need to submit a form!";
 	}
 
 	$to = "danieltn91@gmail.com";    
-	$message = $_REQUEST['message'] ;
-	$visitor_email = $_REQUEST['email'];
-	$company = $_REQUEST['organization'];
-	$firstName = $_REQUEST['firstname'];
-	$lastName = $_REQUEST['lastname'];
+	$message = $_POST['message'] ;
+	$visitor_email = $_POST['email'];
+	$company = $_POST['organization'];
+	$firstName = $_POST['firstname'];
+	$lastName = $_POST['lastname'];
 	$email_subject = "New form submision";
 
 	$email_body = "You recieved a message from a user $firstName $lastName. \n" .
