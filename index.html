@@ -56,16 +56,16 @@
 			<div class="collapse navbar-collapse">
 				<ul class="nav navbar-nav navbar-center">
 					<li class="nav-item">
-						<a id="nav-home">Home</a>
+						<a id="nav-home" href="#">Home</a>
 					</li>
 					<li class="nav-item">
-						<a id="nav-skills">Skills</a>
+						<a id="nav-skills" href="#">Skills</a>
 					</li>
 					<li class="nav-item">
-						<a id="nav-expertise">My Expertise</a>
+						<a id="nav-expertise" href="#">My Expertise</a>
 					</li>
 					<li class="nav-item">
-						<a id="nav-projects">Projects</a>
+						<a id="nav-projects" href="#">Projects</a>
 					</li>
 					<li class="nav-item">
 						<a id="nav-resume" href="resume.html">Resume</a>
@@ -180,7 +180,7 @@
 							<div class="expertise-block pic" style="visibility: visible;">
 								<img href="#col3ContentProject" data-toggle="collapse" src="pictures/home/Drones.jpg">
 								<p id="col3ContentProject" class="collapse in">
-									This project focuses on navigating a drone that cleans up graffiti for tall building where people can not reach to it. This is my senior project that I am working on with my Software Engineering team. We will deliver this project at the end of year 2017.
+									This project focuses on navigating a drone that cleans up graffiti for tall building where people can not reach to it. This is my senior project that I worked on with my Software Engineering team. We delivered this project at the end of year 2017.
 								</p>
 								<a href="/droneitout.html" class="ghostbutton">Check It Out</a>
 							</div>
@@ -264,6 +264,12 @@
 					}, 1500);
 				});
 				$("#nav-skills").click(function() {
+					$('html, body').animate({
+						scrollTop: $("#skills").offset().top
+					}, 1500);
+				});
+				//make transition smoothly
+				$(".learn-more").click(function() {
 					$('html, body').animate({
 						scrollTop: $("#skills").offset().top
 					}, 1500);
