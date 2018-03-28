@@ -64,6 +64,15 @@ textarea{
 	min-height: 170px;
 }
 
+body {
+    font-size: 1.4rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: #93a4aa;
+}
+header, main, menu, section, summary {
+	display: block;
+}
 footer{
 	background-color: #2A3A3F;
 	color: #fff;
@@ -78,6 +87,7 @@ footer .contact a {
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
+
 .divider{
   height:1px;
   border-bottom: 1px solid white;
@@ -95,4 +105,19 @@ footer a, footer a:hover {
 }
 .fa-github:before {
     content: "\f09b";
+}
+
+.container:after, .row:after, .u-cf {
+    content: "";
+    display: table;
+    clear: both;
+}
+body, html {
+    height: 100%;
+}
+html, body {
+    min-height: 100%;
+    margin: 0;
+    padding: 0px;
+    line-height: 1.6;
 }

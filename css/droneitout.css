@@ -45,12 +45,11 @@ iframe {
 #videos{
 	margin-bottom: 100px;
 }
-
 footer{
-	background-color: #2A3A3F;
-	color: #fff;
-	text-align: center;
-	padding: 80px 0 50px;
+  background-color: #2A3A3F;
+  color: #fff;
+  text-align: center;
+  padding: 80px 0 50px;
 }
 footer .contact a {
     display: inline-block;
@@ -60,10 +59,14 @@ footer .contact a {
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
+.divider{
+  height:1px;
+  border-bottom: 1px solid white;
+}
+
 footer a, footer a:hover {
     border-bottom: none;
 }
-
 
 .fa-linkedin:before {
     content: "\f0e1";
@@ -79,4 +82,18 @@ footer a, footer a:hover {
     content: "";
     display: table;
     clear: both;
+}
+html {
+  font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+body, html {
+    height: 100%;
+}
+html, body {
+    min-height: 100%;
+    margin: 0;
+    padding: 0px;
+    line-height: 1.6;
 }
