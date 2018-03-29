@@ -36,6 +36,9 @@ input{
 	border: 1px solid #cccccc;
 	border-radius: 4px;
 }
+input:focus, textarea:focus{
+background-color: lightyellow;
+}
 .submit{
 	box-shadow: none;
 	background-color: #27a2db;
@@ -63,7 +66,16 @@ textarea{
 	margin-top: 10px;
 	min-height: 170px;
 }
-
+.back{
+	box-shadow: none;
+	background-color: #27a2db;
+	color: #fff !important;
+	font-size: 14px;
+	line-height: 14px;
+	max-width: 200px;
+	border-radius: 5px;
+	padding: 10px 50px;
+}
 body {
     font-size: 1.4rem;
     font-family: 'Montserrat', sans-serif;
