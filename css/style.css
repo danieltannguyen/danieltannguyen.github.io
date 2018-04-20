@@ -225,6 +225,10 @@ div {
   padding: 10pt 10pt 10pt 10pt;   
   border-radius: 5px;
 }
+.progress-bar {
+    -webkit-transition: none !important;
+    transition: none !important;
+}
 div{
   box-shadow: none;
   border-color: white;
@@ -265,7 +269,7 @@ div{
     font-size: 1.4rem;
 }
 #me {
-  margin: 20px 0px 20px 0px;
+  padding:  20px 0px 20px 0px;
 	background-color: #eee;
 	text-align: center;
 	margin: 0 auto;
