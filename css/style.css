@@ -232,7 +232,7 @@ div{
 }
 
 #skills {
-    height: 100vh;
+    margin-bottom: 10px;
     position: relative;
     text-align: center;
     width: 100%;
@@ -265,7 +265,7 @@ div{
     font-size: 1.4rem;
 }
 #me {
-  margin-top: 20px;
+  margin: 20px 0px 20px 0px;
 	background-color: #eee;
 	text-align: center;
 	margin: 0 auto;
