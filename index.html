@@ -19,15 +19,13 @@
 
 		<link rel="shortcut-icon" type="image/png" href="/pictures/home/my avatar.png">
 		<!--main css--> 
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" href="css/style.css">
 
 		<link rel="stylesheet" type="text/css" media="screen and (max-device-width: 480px)" href="css/mobile.css" />
 
 		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
 		<!--animaited header css-->
-		<link rel="stylesheet" href="/animation/css/reset.css"> <!-- CSS reset -->
 		<link rel="stylesheet" href="/animation/css/style.css"> <!-- Resource style -->
-		<script src="/animation/js/modernizr.js"></script> <!-- Modernizr -->
 		<!--icons css-->
 		<link rel="stylesheet" href="font-awesome-4.7.02/css/font-awesome.min.css">
 		<!-- Latest compiled and minified CSS -->
@@ -36,7 +34,7 @@
 		<link rel="stylesheet" href="bootstrap-3.3.7-dist2/css/bootstrap-theme.min.css">
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-		<script src="/animation/js/main.js"></script> <!-- Resource jQuery -->
+		<script src="/animation/js/script.js"></script> <!-- Resource jQuery -->
 		<script src="/bootstrap-3.3.7-dist2/js/bootstrap.min.js"></script>
 		<!--Angularjs library-->
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js" ></script>
@@ -67,6 +65,16 @@
 					<li class="nav-item">
 						<a id="nav-projects" href="#">Projects</a>
 					</li>
+
+					<li class="nav-item">
+						  <a type="button" style="background-color: transparent; color: #9d9d9d" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						    Collections
+						  </a>
+						  <div class="dropdown-menu" style="background-color: transparent">
+						    <a class="dropdown-collections"  style="; color: #fff" href="#">CSS Learning Materials</a>
+						  </div>
+					</li>
+
 					<li class="nav-item">
 						<a id="nav-resume" href="resume.html">Resume</a>
 					</li>
@@ -84,16 +92,8 @@
 						<img class="img-circle" src="pictures/home/my avatar.png">
 					</a>
 					<!--letters Hi Im daniel-->
-					<section class="cd-intro">
-						<h1 class="cd-headline zoom" style="color:white;">
-							<span>Hi, I'm Daniel. Welcome to</span>
-							<br>
-							<span class="cd-words-wrapper" style="text-align:center;">
-								<b class="is-visible">My Portfolio</b>
-								<b>My Site</b>
-								<b>My Collections</b>
-							</span>
-						</h1>
+					<section class="cd-intro">	
+							<div class="terminal" style="color: white; font-size: 40px"></div>
 					</section>
 					<section class="learn-more">
 						<div class="page-scroll learn-more">
@@ -286,6 +286,18 @@
 				</div>
 			</section>
 		</footer>
+		<script type="text/javascript">
+			var typeWriting = new TypeWriting({
+			    targetElement   : document.getElementsByClassName('terminal')[0],
+			    inputString     : "Hi. I'm Daniel. <br>Welcome to my portfolio site :)</br>",
+			    typing_interval : 130, // Interval between each character
+			    blink_interval  : '0.2s', // Interval of the cursor blinks
+			    cursor_color    : 'white', // Color of the cursor
+			    }, function() {
+			    console.log("END");
+			});
+		</script>
+		
 		<!--<script src="/js/skills.js"></script>-->
 		<script type="text/javascript">
 			function sizeFullHeight() {
