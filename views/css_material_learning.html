@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Daniel Nguyen | Portfolio Site</title>
+	<meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+		<link rel="shortcut-icon" type="image/png" href="/pictures/home/my avatar.png">
+		<!--main css--> 
+		<link rel="stylesheet" href="/css/css_material.css">
+		<link rel="stylesheet" type="text/css" media="screen and (max-device-width: 480px)" href="/css/mobile.css" />
+
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="/bootstrap-3.3.7-dist2/css/bootstrap.min.css">
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="/bootstrap-3.3.7-dist2/js/bootstrap.min.js"></script>
+		<!--Angularjs library-->
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js" ></script>
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>			
+				</button>
+			</div>
+			<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav navbar-center">
+					<li class="nav-item">
+						<a id="nav-home" href="/index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a id="nav-skills" href="/index.html#skills">Skills</a>
+					</li>
+					<li class="nav-item">
+						<a id="nav-expertise" href="/index.html#me">My Expertise</a>
+					</li>
+					<li class="nav-item">
+						<a id="nav-projects" href="/index.html#projects">Projects</a>
+					</li>
+					<li class="nav-item">
+						  <a type="button" style="background-color: transparent; color: #9d9d9d" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						    Collections
+						  </a>
+						  <div class="dropdown-menu" style="background-color: #2A3A3F">
+						    <a class="dropdown-collections"  style="color: #fff" href="/views/css_material-learning.html">CSS Learning Materials</a>
+						  </div>
+					</li>
+
+					<li class="nav-item">
+						<a id="nav-resume" href="/views/resume.html">Resume</a>
+					</li>
+					<li class="nav-item">
+						<a id="nav-contact" href="/views/contact.html">Contact</a>
+					</li>
+				</ul>	
+			</div>
+		</nav> <!--End navigation bar -->
+
+	<h1 class="title">CSS3: Grid, Images, Transition, Responsive vs Fluid</h1>
+	<h4 class="credit"><i>Thanks to Jubilee Kim and Christina Truong's lecture !</i></h4>
+	<div class="container">
+		<h2><strong>Layouts</strong></h2>
+		<h4><strong>Block</strong></h4>
+		<li>100% width of container</li>
+		<li>Element are stacked</li>
+		<h4>Inline</h4>
+		<li>Same width as its content</li>
+		<li>Element sit in a line, side by side<</li>
+		<div>
+			<img src="/pictures/css_material_learning/inline-block.png">
+			<img src="/pictures/css_material_learning/inline-block-code.png">
+		</div>
+		<p>Use the value of inline or block to change the default display behavior of an element</p>
+
+	<h2><strong>Float property</strong></h2>
+		<p>The float property can also be used to change the default page layout by aligning the elements to the left or right of its container. Floating elements will change the natural page flow and stacking layout.
+		</p>
+		<img src="/pictures/css_material_learning/notfloated.png">
+		<img src="/pictures/css_material_learning/floated.png">
+
+		<!--position in CSS-->
+		<h2><strong>CSS Position</strong></h2>
+		<li>Can be used to arrange components on the page</li>
+		<li>Uses one of three values: <strong>relative, absolute or fixed</strong></li>
+		<li>Must be used with at least one box offset property: <strong>top, right, bottom or left.</strong></li>
+		<img src="/pictures/css_material_learning/relative.png">
+		<img src="/pictures/css_material_learning/absolute.png">
+		<img src="/pictures/css_material_learning/fixed.png">
+
+		<h2><strong>Position: Sticky</strong></h2>
+		<p>There is also a newer position value of sticky, which displays like a combination of relative and fixed positioning. The element is relatively positioned until the viewport reaches the declared offset value when scrolling the page. Then the element becomes fixed.</p>
+
+		<h2><strong>CSS Grid</strong></h2>
+		<p>Designing webpages with a grid, can help create a consistent design flow, and symmetrical design layouts. Grids are broken down into equal width, evenly spaced columns, that are used as a guide for laying out various page components. Gutters can also be included to add consistent spacing between columns.</p>
+		<img src="/pictures/css_material_learning/grid.png">
+		<p>Page components are arranged within the columns, and can span one or more columns. There are different ways to define a grid, but a common layout for webpages is to use a 12 equal-column grid. 12 is easily devisable by two, three, four, and six, making it easier to create responsive designs.</p>
+		<img src="/pictures/css_material_learning/grid-column.png">
+		<p>There are also generators such as this online tool, GridCalculator.dk. To make a grid, first define dimensions such as the max width of the entire page design, and the number of columns.</p>
+		<img src="/pictures/css_material_learning/grid-calculator.png">
+
+
+	</div>
+	
+
+</body>
+</html>

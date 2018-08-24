@@ -12,6 +12,9 @@
 }
 div {
   display: block;
+  box-shadow: none;
+  border-color: white;
+  border: hidden;
 }
 .content a img {
   margin-top: 100px; 
@@ -229,11 +232,7 @@ div {
     -webkit-transition: none !important;
     transition: none !important;
 }
-div{
-  box-shadow: none;
-  border-color: white;
-  border: hidden;
-}
+
 
 #skills {
     margin-bottom: 10px;
