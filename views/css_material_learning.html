@@ -12,6 +12,7 @@
 		<link rel="stylesheet" type="text/css" media="screen and (max-device-width: 480px)" href="/css/mobile.css" />
 
 		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="/font-awesome-4.7.02/css/font-awesome.min.css">
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="/bootstrap-3.3.7-dist2/css/bootstrap.min.css">
 		<!-- Latest compiled and minified JavaScript -->
@@ -104,9 +105,64 @@
 		<p>There are also generators such as this online tool, GridCalculator.dk. To make a grid, first define dimensions such as the max width of the entire page design, and the number of columns.</p>
 		<img src="/pictures/css_material_learning/grid-calculator.png">
 
+		<h2><strong>Flexbox</strong></h2>
+		<p>The flexible box layout, or flexbox for short, includes many options for aligning elements and creating flexible items. When using traditional techniques like float, each item is the same height as its content and required additional hacks to make them equal height columns. So using flex makes it much easier since it automatically sets the height of each flex item to be the same as the largest item without any additional CSS. With flexbox, you can also change the direction of the items without changing the HTML markup.</p>
+		<img src="/pictures/css_material_learning/flex-box.png">
+
+		<h2><strong>Retina Displays and Images</strong></h2>
+		<p>Each pixel is basically a small square, which contains its own brightness level and color. Together, the pixels are combined to make a graphic. Pixel density refers to how many pixels are contained within a space, usually measured by pixels per inches, PPI, or sometimes referred to as dots per inch, DPI.</p>
+
+		<h2><strong>Pixel Density</strong></h2>
+		<p>The more pixels there are within the same area, the smaller the pixels are, which is how text and images appear smoother, clearer, and show more detail.</p>
+		<img src="/pictures/css_material_learning/density.png">
+
+		<h2></strong>Retina Display</h2>
+		<p>A 1280 by 800 pixel image will fit for the regular display, but in the Retina display, the image will have to stretch to twice its size to fill the area, which will likely lower the quality of the image. Instead, create an image that is twice the size. In the Retina display, the image now has the same number of dots per inch as the display. In the non-Retina display, use CSS to set the width to 100%, or 1280 pixels, to scale it down to fit the box.</p>
+		<img src="/pictures/css_material_learning/rentina.png">
+
+		<h2><strong>Background Images</strong></h2>
+		<p>"For background images, you can use CSS to target Retina screens. Use a media query, but instead of targeting the size of the actual screen, target the screen’s resolution, using the media feature <strong>resolution</strong>.</p>
+		<img src="/pictures/css_material_learning/resolution.png">
+		<p>Most of the time when using media queries we target the width of the viewport to create responsive designs. To target the screen by pixel density use the resolution media feature instead. Similar to targeting by width, use min resolution to set a minimum DPI value.</p>
+		<img src="/pictures/css_material_learning/min-resolution.png">
+
+
+
+
+
 
 	</div>
-	
+	<!--Footer Contact-->
+		<footer id="contact">
+			<section class="contact" id="contact">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div>&nbsp;</div>
+							<div class="contact">
+								<a style="color: lightblue" href="https://www.linkedin.com/in/danieltn91" target="_blank"><i class="fa fa-linkedin fa-3x"></i></a>
+								<a style="color: #2D6AEF" href="https:www.facebook.com/dannielnguyen" target="_blank"><i class="fa fa-facebook fa-3x"></i></a>
+								<a style="color: #8E43FC" href="https://www.github.com/codeskiller" target="_blank"><i class="fa fa-github fa-3x"></i></a>	
+							</div>
+							<div>&nbsp;</div>
+							<p class="developed-by">Developed by Daniel Nguyen © 2017</p>
+							<div class="divider"></div>
+							<div class="contact2">
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"> 
+										<h4>Email: Danieltn91@gmail.com</h4>
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"> 
+										<h4>Phone: (408)-667-1910</h4>
+									</div>
+								</div>		
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+		</footer>
 
 </body>
 </html>

@@ -17,7 +17,10 @@
 	text-align: center;
 }
 .container{
-	max-width: 740px;
+	max-width: 840px;
+}
+p, .container li{
+	font-size: 16pt;
 }
 html {
   font-family: sans-serif;
@@ -43,4 +46,37 @@ img {
 	width: 100%;
 	display: inline-block;
 	margin: auto
+}
+
+footer{
+	background-color: #2A3A3F;
+	color: #fff;
+	text-align: center;
+	padding: 10px 0 10px;
+}
+footer .contact a {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 4px;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.divider{
+  height:1px;
+  border-bottom: 1px solid white;
+}
+
+footer a, footer a:hover {
+    border-bottom: none;
+}
+
+.fa-linkedin:before {
+    content: "\f0e1";
+}
+.fa-facebook:before {
+    content: "\f0e1";
+}
+.fa-github:before {
+    content: "\f09b";
 }
