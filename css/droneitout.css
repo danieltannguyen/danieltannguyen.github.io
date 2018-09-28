@@ -36,14 +36,14 @@ h1 {
 }
 iframe {
    display: block;
-   margin: 0 auto;
+   width: 460px;
+   height: 315px;
 }
-#video div h5{
-   text-align: center;
-   vertical-align: center;
+#video-block {
+  margin-bottom: 40px;
 }
 #videos{
-	margin-bottom: 100px;
+	margin-bottom: 50px;
 }
 footer{
   background-color: #2A3A3F;
