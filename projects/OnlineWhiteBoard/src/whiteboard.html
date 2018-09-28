@@ -66,7 +66,7 @@
 				
 				<div class="menu-item">
 			
-					<button type="button"  style="background-color: #fff; font-size:11px;" onclick="toggle();">Menu</button>
+					<button id="menu" type="button" onclick="toggle();">Menu</button>
 				</div>
 				<div class="menu-item">
 					<div id="black" onclick="colorSelectListener('#000000')" class="color-icon" style="background: #000000;"></div>
@@ -99,7 +99,7 @@
 		<div class="col">
 			<div id="tools" style="display: none; " class="col-collapse" >
 				<!--clean button-->
-				<button onclick="clearCanvas()"><u>Clear</u>&nbsp;</button>
+				<button id="clear-button" onclick="clearCanvas()">Clear&nbsp;</button>
 				<span> | </span>
 				<!--eraser button-->
 				<i class="fa fa-eraser" aria-hidden="true" onclick="colorSelectListener('#ffffff')">&nbsp;</i>
