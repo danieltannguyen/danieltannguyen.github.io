@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Whiteboard</title>
+	<meta charset="utf-8">
+	<!--Prevents iPhone, iPad, and touch devices from scrolling or zooming when touched-->
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+	
+	<link rel="stylesheet" type="text/css" href="/projects/OnlineWhiteBoard/css/whiteboard-style.css">
+	<link rel="stylesheet" type="text/css" href="/projects/OnlineWhiteBoard/css/font-awesome.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="/bootstrap-3.3.7-dist2/css/bootstrap.min.css">
+	<script src="/bootstrap-3.3.7-dist2/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="/font-awesome-4.7.02/css/font-awesome.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+</head>
+<body>
+	<!--The canvas where drawings will be displayed-->
+	<div class="row">    	
+		<canvas id="canvas"></canvas>
+	</div>
+
+	<header>
+		<div class="bubble">
+			<span id="occupancy">0</span>
+			<span id="unit">User</span>
+		</div>
+	</header>
+	<!--Drop down menus for selecting line thickness and color-->	
+		
+		<div class="status">
+			  <!--A status text field, for displaying connection information-->
+ 			 <p id="status"></p>
+ 		</div>
+ 			<!--inital input-->
+		<input type="text" value="whiteboard" id="RoomID" value="1" style="display:none;">
+
+		<!--Join button-->
+		<button class="btn btn-success Join" onclick="join()">Join</button>
+			<form id="formJoin">
+				<fieldset id="join">
+			    <legend>Enter Room ID</legend>
+			    <input id="roomID" type="text" size="12" value=""  style="border: ridge 5px;" /> 
+			    <a onClick="roomSelectListener('roomID')" type="submit">Join</a>
+				</fieldset>
+			</form>
+			
+
+		<!--Share button-->
+		<button class="btn btn-success Share" onclick="share()">Share</button>
+			<fieldset id="share">
+			    <legend>Share this room ID</legend>
+			    <input id="roomId" type="text" size="12" value="id" style="border: ridge 5px;"/> 
+			<!--value will be replaced with a ramdom value-->
+			    <a href="#" onClick="copyfieldvalue(event, 'roomId');return false">Copy</a>
+				<a id="answer"></a>
+			</fieldset>
+
+		<!--color bar-->
+		<div class="col">
+			<div class="submenu" id="color">
+				
+				<div class="menu-item">
+			
+					<button type="button"  style="background-color: #fff; font-size:11px;" onclick="toggle();">Menu</button>
+				</div>
+				<div class="menu-item">
+					<div id="black" onclick="colorSelectListener('#000000')" class="color-icon" style="background: #000000;"></div>
+				</div>
+				<div class="menu-item">
+				<a>
+					<div id="red" onclick="colorSelectListener('#F34336')" class="color-icon" style="background: #F34336;"></div>
+					</a>
+				</div>
+				<div class="menu-item">
+					<div id="green" onclick="colorSelectListener('#4CAF50')" class="color-icon" style="background: #4CAF50;"></div>
+				</div>
+				<div class="menu-item">
+					<div id="blue" onclick="colorSelectListener('#2196F3')" class="color-icon" style="background: #2196F3;"></div>
+				</div>
+				<div class="menu-item">
+					<div id="yellow" onclick="colorSelectListener('#FFC107')" class="color-icon" style="background: #FFC107;"></div>
+				</div>
+				<div class="menu-item">
+					<div id="purple" onclick="colorSelectListener('#9C27B0')" class="color-icon" style="background: #9C27B0;"></div>
+				</div>
+				<div class="menu-item">
+					<div id="pink" onclick="colorSelectListener('#E91E63')" class="color-icon" style="background: #E91E63;"></div>
+				</div>
+				<div class="menu-item">
+					<div id="brown" onclick="colorSelectListener('#795548')" class="color-icon" style="background: #795548;"></div>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+			<div id="tools" style="display: none; " class="col-collapse" >
+				<!--clean button-->
+				<button onclick="clearCanvas()"><u>Clear</u>&nbsp;</button>
+				<span> | </span>
+				<!--eraser button-->
+				<i class="fa fa-eraser" aria-hidden="true" onclick="colorSelectListener('#ffffff')">&nbsp;</i>
+				<span> | </span>
+				Size:
+				<select id="thickness">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="10">10</option>
+					<option value="20">20</option>
+				</select>
+			</div>	
+		</div>
+
+
+	<footer class="blank-footer" style="height: 100px; bottom: 0; width: 100%">
+		
+	</footer>
+
+
+	<!-- menu button trigger-->
+	<script type="text/javascript">
+  		var toggle = function() {
+	  		var mydiv = document.getElementById('tools');
+	  		if (mydiv.style.display === 'block' || mydiv.style.display === '')
+	    		mydiv.style.display = 'none';
+	  		else
+	   		 mydiv.style.display = 'block';
+  		}
+  	
+  		document.getElementById('RoomID').value = Math.random().toString(36).substring(2,7);
+
+  		function join(){
+  			//close share form
+  			var share = document.getElementById('share');
+  			share.style.display = 'none';
+
+  			//display inputform
+  			var inputform = document.getElementById('join');
+  			if(inputform.style.display === 'block' || inputform.style.display === ''){
+				inputform.style.display = 'none';
+			}
+			else {
+				inputform.style.display = 'block';
+			}
+  		}
+
+		function share() {
+			//close join form
+			var inputform = document.getElementById('join');
+			inputform.style.display = 'none';
+
+			//display share info
+		  	var share = document.getElementById('share');
+  			if(share.style.display === 'block' || share.style.display === ''){
+				share.style.display = 'none';
+			}
+			else {
+				share.style.display = 'block';
+			}
+			document.getElementById("roomId").value = document.getElementById('RoomID').value;
+		}
+
+		function copyfieldvalue(e, id){
+   			var field = document.getElementById(id);
+    		// Select some text (you could also create a range)
+   			field.select(); 
+
+		   	// Use try & catch for unsupported browser
+		   	try {
+		       // The important part (copy selected text)
+		       var successful = document.execCommand('copy');
+
+		       if(successful) answer.innerHTML = 'Copied!';
+		       else answer.innerHTML = 'Unable to copy!';
+		   	} 
+		   	catch (err) {
+		       answer.innerHTML = 'Unsupported Browser!';
+		   	}
+		}
+
+	</script>
+	<script>
+		// For history() demo, please view history.html.
+		var drawHistory = false;
+	</script>
+	<script src="//cdn.pubnub.com/pubnub-3.14.1.min.js"></script>
+		<!--Load UnionDraw application code-->
+	<script src="/projects/OnlineWhiteBoard/src/app.js"></script>
+</body>
+</html>
