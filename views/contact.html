@@ -53,33 +53,33 @@
 			<div class="wrap container" role="document">
 				<div class="row">
 					<div class="col-md-6">
-						<form class="contact-form">
+						<form class="contact-form" method="POST" action="https://formspree.io/danieltn91@gmail.com">
 							<div class="title"><h2>Send a Message</h2></div>
 							<div class="row"> 
 								<div class="col-xs-6">
 									<span>First Name
 										<span class="red">*</span>
-										<span><input type="text" id="firstname" name="firstname"></span>
+										<span><input type="text" id="firstname" name="Firstname" required></span>
 									</span>			
 								</div>
 								<div class="col-xs-6">
 									<span>Last Name
 										<span class="red">*</span>
-										<span><input type="text" id="lastname" name="lastname"></span>
+										<span><input type="text" id="lastname" name="Lastname" required></span>
 									</span>
 								</div>	
 							</div>
 							<p>Email Address
 								<span class="red">*</span><br>
-								<span><input type="email" id="email" name="_replyto"></span>
+								<span><input type="email" id="email" name="Email" required></span>
 							</p>	
 							<p>Organization
 								<br>
-								<span><input type="text" id="organization" name="name"></span>
+								<span><input type="text" id="organization" name="Organization"></span>
 							</p>	
 							<p>Message
 								<span class="red">*</span><br>
-								<span><textarea class="message" id="message" cols="40" rows="10"></textarea></span>
+								<span><textarea class="message" id="message" name="Message" cols="40" rows="10" required></textarea></span>
 							</p>
 							<input type="text" name="_gotcha" style="display:none"/>
 							<input type="hidden" name="_format" value="plain" />
@@ -127,65 +127,6 @@
 			</div>
 		</section>
 	</footer>
-	<script type="text/javascript">
-		$(document).ready(function() {
-
-			$('.contact-form').on('submit', function(e) {
-				e.preventDefault();
-
-		        //get the name field value
-		        var fname = $('#firstname').val();
-		        var lname = $('#lastname').val();
-		        //get the name field value
-		        var email = $('#email').val();
-		        //get organization name
-		        var organization = $('#organization').val();
-		        //get the messages
-		        var messages = $('#message').val();
-
-		        //pretend we don't need validation
-		        if(fname == ""){
-		        	alert("Please enter first name!");
-		        	return false;
-		        }
-		        if(lname == ""){
-		        	alert("Please enter last name!");
-		        	return false;
-		        }
-		        if(email == ""){
-		        	alert("Please enter your email!");
-		        	return false;
-		        }
-		        if(messages == ""){
-		        	alert("Please enter your messages!");
-		        	return false;
-		        }
-		        else{
-		        	 //send to formspree
-		        	 $.ajax({
-		        	 	url:'https://formspree.io/danieltn91@gmail.com',
-		        	 	method:'POST',
-		        	 	data:{
-		        	 		firstname:fname,
-		        	 		lastname:lname,
-		        	 		organization:organization,
-		        	 		_replyto:email,
-		        	 		email:email,
-		        	 		messages:messages,
-		        	 		_subject:'My Form Submission from www.danielnguyen.xyz',
-		        	 	},
-		        	 	dataType:"json",
-		        	 	success:function() {
-		        	 		console.log('success'); 
-		        	 		$('#formBlock').hide();
-		        	 		$('footer').hide();
-		        	 		$('#thankyouBlock').show();
-		        	 	}   
-		        	 });  
-		        	 return true;
-		        	}
-		        });
-		}); 
-	</script>
+	
 </body>
 </html>
