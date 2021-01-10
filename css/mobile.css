@@ -5,11 +5,19 @@
 	  height: 50px; 
 	  max-width: 50%;
 	}
-	.home-header {
-      background-image: url(/pictures/logo.jpg);
-  	}
-  	.cd-intro h1{
-  		font-size: 16px;
+    .home-header {
+        background-image: url(/pictures/logo.jpg);
+        display: block;
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+    }
+    body, html {
+        overflow-x: hidden;
+    }
+    /* Increase the font size */
+  	.cd-intro{
+  		font-size: 20px;
   	}
   	.row h1 {
   		font-size: 25px;
@@ -26,13 +34,32 @@
 
 /* Smartphones (landscape) ----------- */
 @media only screen and (min-width : 321px) {
+    body, html {
+        overflow-x: hidden;
+    }
+}
 
+@media only screen and (max-width : 1024px) {
+    body, html {
+        overflow-x: hidden;
+    }
+
+    .home-header {
+        background-image: url(/pictures/logo.jpg);
+        display: block;
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+    }
 }
 @media screen and (min-width: 550px) {}
   	.btnstart {
       font-size: 1.4rem;
       line-height: 5.0rem;
   	}
+body, html {
+    overflow-x: hidden;
+}
 }
 @media (min-width: 550px) {
  	.header-container {
@@ -54,6 +81,9 @@
   	.column:first-child, .columns:first-child {
       	margin-left: 0;
   	}
+    body, html {
+        overflow-x: hidden;
+    }
   	
 }
 
@@ -65,11 +95,21 @@
 	  height: 50px; 
 	  max-width: 50%;
 	}
-	.home-header {
-      background-image: url(/pictures/logo.jpg);
-  	}
-  	.cd-intro h1{
-  		font-size: 16px;
+    .terminal {
+        font-size: 50%;
+    }
+    .home-header {
+        background-image: url(/pictures/logo.jpg);
+        display: block;
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+    }
+    body, html {
+        overflow-x: hidden;
+    }
+  	.cd-intro{
+  		font-size: 20px;
   	}
   	h1 {
   		font-size: 18px;
@@ -87,4 +127,7 @@
 	  max-width: 10%;
 	}
 
+    body, html {
+        overflow-x: hidden;
+    }
 }

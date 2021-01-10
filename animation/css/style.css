@@ -46,3 +46,9 @@
        -moz-animation: blink .7s infinite;
             animation: blink .7s infinite;
 }
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+    .typingCursor::after {
+        font-size: 50%;   
+    }
+}
