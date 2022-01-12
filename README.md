@@ -1,4 +1,4 @@
 # My Portfolio
 
-Https://www.danielnguyen.xyz
+https://danieltannguyen.github.io
 
